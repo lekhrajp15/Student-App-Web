@@ -33,7 +33,6 @@ class Learnpage(utility):
     ptr = (By.XPATH, "//*[text()='Points to Remember']")
     prerequisite = (By.XPATH, "//*[text()='Prerequisite Topics to ace this Topic']")
     prerequisitetopic = (By.XPATH, "//body/div[@id='app']/main[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]")
-
     sub_embibeexplainers = (By.XPATH, "//*[contains(text(), 'Embibe Explainers For')]/parent::div/div[2]/div/div/div[1]/div/div/div")
     sub_trendingvideos = (By.XPATH, "//*[contains(text(), 'Trending Videos for Your Exam')]/parent::div/div[2]/div/div/div[1]/div/div/div")
 
@@ -95,10 +94,11 @@ class Learnpage(utility):
         time.sleep(5)
         self.playvideobutton()
 
+
         self.driver.find_element(*Learnpage.all_videos).click()
         time.sleep(8)
-        self.driver.find_element(*Learnpage.learn_button).send_keys(keys.Keys.ESCAPE)
-        self.driver.find_element(*Learnpage.learn_button).send_keys(keys.Keys.ESCAPE)
+        self.playvideobutton()
+        self.driver.back()
 
         self.driver.find_element(*Learnpage.chapter_topic).click()
         self.driver.find_element(*Learnpage.chapter_video).click()
@@ -106,6 +106,7 @@ class Learnpage(utility):
         self.playvideobutton()
         self.driver.back()
         self.driver.find_element(*Learnpage.ptr).click()
+
         self.driver.find_element(*Learnpage.prerequisite).click()
         self.driver.find_element(*Learnpage.prerequisitetopic).click()
         time.sleep(5)
@@ -119,16 +120,18 @@ class Learnpage(utility):
         for i in range(0,count-2):
             self.driver.find_element(By.CSS_SELECTOR,"[id='sub"+str(i)+"']").click()
             self.driver.refresh()
+            time.sleep(5)
             self.driver.find_element(*Learnpage.sub_trendingvideos).click()
             time.sleep(5)
             self.playvideobutton()
-            time.sleep(5)
             self.driver.find_element(*Learnpage.more_topic).click()
+            time.sleep(5)
             self.driver.find_element(*Learnpage.topic_video).click()
             time.sleep(5)
             self.playvideobutton()
             self.driver.back()
             self.driver.find_element(*Learnpage.related_video).click()
+            time.sleep(3)
             self.driver.find_element(*Learnpage.topic_video).click()
             time.sleep(5)
             self.playvideobutton()
@@ -139,13 +142,14 @@ class Learnpage(utility):
             self.driver.find_element(*Learnpage.sub_embibeexplainers).click()
             time.sleep(5)
             self.playvideobutton()
-            time.sleep(5)
             self.driver.find_element(*Learnpage.more_topic).click()
+            time.sleep(3)
             self.driver.find_element(*Learnpage.topic_video).click()
             time.sleep(5)
             self.playvideobutton()
             self.driver.back()
             self.driver.find_element(*Learnpage.related_video).click()
+            time.sleep(3)
             self.driver.find_element(*Learnpage.topic_video).click()
             time.sleep(5)
             self.playvideobutton()
@@ -158,11 +162,11 @@ class Learnpage(utility):
             self.playvideobutton()
 
             self.driver.find_element(*Learnpage.all_videos).click()
-            time.sleep(8)
+            time.sleep(5)
             self.driver.find_element(*Learnpage.learn_button).send_keys(keys.Keys.ESCAPE)
             self.driver.find_element(*Learnpage.learn_button).send_keys(keys.Keys.ESCAPE)
 
-            self.driver.find_element(*Learnpage.chapter_topic).click()
+            self.driver.find_element(*Learnpage.chapter_topic).click() #need to check
             time.sleep(5)
             self.driver.find_element(*Learnpage.chapter_video).click()
             self.playvideobutton()

@@ -8,13 +8,6 @@ import logging
 
 class utility:
 
-    def playvideobutton(self):
-        self.driver.find_element(By.CSS_SELECTOR, "[data-tour='learn-button']").click()
-        time.sleep(10)
-        self.driver.find_element(By.CSS_SELECTOR, "[data-tour='learn-button']").send_keys(keys.Keys.ESCAPE)
-        self.driver.find_element(By.CSS_SELECTOR, "[data-tour='learn-button']").send_keys(keys.Keys.ESCAPE)
-        time.sleep(5)
-
     def getLogger(self):
         loggerName = inspect.stack()[1][3]
         logger = logging.getLogger(loggerName)

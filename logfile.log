@@ -970,3 +970,307 @@
 2023-10-04 20:04:29,566 :INFO : test_signin :Test case : Sign In with Password 
 2023-10-04 20:10:55,075 :INFO : test_signin :Test case : Sign In with Password 
 2023-10-04 20:21:13,392 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-07 23:18:01,696 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-07 23:24:36,626 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-07 23:30:49,169 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-07 23:31:44,008 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-07 23:32:17,028 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:19:12,496 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2023-10-28 14:19:12,501 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:20:48,767 :INFO : test_Continuelearning :Playing Videos present in the Continue Learning Carousel
+2023-10-28 14:20:48,787 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:20:48,787 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:21:31,003 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:21:31,003 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:21:31,003 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:23:34,571 :INFO : test_TrendingVideos :Test case Executed : Playing  Videos present in the Trending Videos
+2023-10-28 14:23:34,571 :INFO : test_TrendingVideos :Test case Executed : Playing Videos present in the More Topic Carousel present inside Trending Videos details Page
+2023-10-28 14:23:34,572 :INFO : test_TrendingVideos :Test case : Playing Videos present in the Related Videos Carousel present inside Trending Videos details Page
+2023-10-28 14:23:40,187 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:23:40,187 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:23:40,187 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:23:40,187 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:25:37,288 :INFO : test_EmbibeExplainers :Test case Executed : Playing Videos present in the Embibe Explainers Carousel
+2023-10-28 14:25:37,289 :INFO : test_EmbibeExplainers :Test case Executed : Playing Video present in the More Topics carousel present in Embibe Explainers details Page
+2023-10-28 14:25:37,290 :INFO : test_EmbibeExplainers :Test case Executed : Playing Video present in the Related Videos carousel present in Embibe Explainers details Page
+2023-10-28 14:25:43,289 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:25:43,289 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:25:43,289 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:25:43,289 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:25:43,289 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:16,795 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:16,795 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:16,795 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:16,795 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:16,795 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:16,795 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:45,832 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:45,832 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:45,832 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:45,832 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:45,832 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:45,832 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:45,832 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:57,688 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:57,688 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:57,688 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:57,688 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:57,688 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:57,688 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:57,688 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:27:57,688 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:09,061 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2023-10-28 14:28:20,920 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:29,883 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2024-01-06 22:29:29,891 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:44,303 :INFO : test_Continuelearning :Playing Videos present in the Continue Learning Carousel
+2024-01-06 22:29:44,313 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:44,313 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:50,414 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:50,414 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:50,414 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:55,568 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:55,568 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:55,568 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:29:55,568 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:31:26,455 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2024-01-06 22:31:26,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:32:15,887 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2024-01-06 22:32:15,891 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:33:42,928 :INFO : test_Continuelearning :Playing Videos present in the Continue Learning Carousel
+2024-01-06 22:33:42,937 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:33:42,937 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:34:31,962 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:34:31,962 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:34:31,962 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:36:15,584 :INFO : test_TrendingVideos :Test case Executed : Playing  Videos present in the Trending Videos
+2024-01-06 22:36:15,585 :INFO : test_TrendingVideos :Test case Executed : Playing Videos present in the More Topic Carousel present inside Trending Videos details Page
+2024-01-06 22:36:15,585 :INFO : test_TrendingVideos :Test case : Playing Videos present in the Related Videos Carousel present inside Trending Videos details Page
+2024-01-06 22:36:21,927 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:36:21,927 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:36:21,927 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:36:21,927 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:37:34,286 :INFO : test_EmbibeExplainers :Test case Executed : Playing Videos present in the Embibe Explainers Carousel
+2024-01-06 22:37:34,287 :INFO : test_EmbibeExplainers :Test case Executed : Playing Video present in the More Topics carousel present in Embibe Explainers details Page
+2024-01-06 22:37:34,287 :INFO : test_EmbibeExplainers :Test case Executed : Playing Video present in the Related Videos carousel present in Embibe Explainers details Page
+2024-01-06 22:37:40,043 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:37:40,043 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:37:40,043 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:37:40,043 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:37:40,043 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:38:30,512 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:38:30,512 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:38:30,512 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:38:30,512 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:38:30,512 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:38:30,512 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:05,897 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:05,897 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:05,897 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:05,897 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:05,897 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:05,897 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:05,897 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:24,909 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:24,909 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:24,909 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:24,909 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:24,909 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:24,909 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:24,909 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:24,909 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:39:54,084 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:40:21,154 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:42:34,660 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2024-01-06 22:42:34,665 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:43:16,302 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:43:23,052 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2024-01-06 22:43:23,055 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:43:23,055 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:45:11,633 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:47:29,589 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:47:46,039 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2024-01-06 22:47:46,046 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:47:46,046 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:49:17,127 :INFO : test_Continuelearning :Playing Videos present in the Continue Learning Carousel
+2024-01-06 22:49:17,134 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:49:17,134 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:49:17,134 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:49:47,886 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:49:47,886 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:49:47,886 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:49:47,886 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:51:35,366 :INFO : test_TrendingVideos :Test case Executed : Playing  Videos present in the Trending Videos
+2024-01-06 22:51:35,366 :INFO : test_TrendingVideos :Test case Executed : Playing Videos present in the More Topic Carousel present inside Trending Videos details Page
+2024-01-06 22:51:35,366 :INFO : test_TrendingVideos :Test case : Playing Videos present in the Related Videos Carousel present inside Trending Videos details Page
+2024-01-06 22:51:41,286 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:51:41,286 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:51:41,286 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:51:41,286 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:51:41,286 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:52:56,889 :INFO : test_EmbibeExplainers :Test case Executed : Playing Videos present in the Embibe Explainers Carousel
+2024-01-06 22:52:56,890 :INFO : test_EmbibeExplainers :Test case Executed : Playing Video present in the More Topics carousel present in Embibe Explainers details Page
+2024-01-06 22:52:56,890 :INFO : test_EmbibeExplainers :Test case Executed : Playing Video present in the Related Videos carousel present in Embibe Explainers details Page
+2024-01-06 22:53:03,096 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:03,096 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:03,096 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:03,096 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:03,096 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:03,096 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:50,497 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:50,497 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:50,497 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:50,497 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:50,497 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:50,497 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:53:50,497 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:29,024 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:29,024 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:29,024 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:29,024 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:29,024 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:29,024 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:29,024 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:29,024 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:54:47,460 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:07,602 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 22:55:30,491 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:00:37,119 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:01:10,782 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2024-01-06 23:01:10,798 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:01:10,798 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:02:06,366 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:02:25,789 :INFO : test_playsubjectHeroBanner :Playing Subject Hero Banner Videos
+2024-01-06 23:02:25,797 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:02:25,797 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:03:57,106 :INFO : test_Continuelearning :Playing Videos present in the Continue Learning Carousel
+2024-01-06 23:03:57,112 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:03:57,112 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:03:57,112 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:04:24,564 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:04:24,564 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:04:24,564 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:04:24,564 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:05:39,456 :INFO : test_TrendingVideos :Test case Executed : Playing  Videos present in the Trending Videos
+2024-01-06 23:05:39,456 :INFO : test_TrendingVideos :Test case Executed : Playing Videos present in the More Topic Carousel present inside Trending Videos details Page
+2024-01-06 23:05:39,457 :INFO : test_TrendingVideos :Test case : Playing Videos present in the Related Videos Carousel present inside Trending Videos details Page
+2024-01-06 23:05:45,997 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:05:45,997 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:05:45,997 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:05:45,997 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:05:45,997 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:07:39,356 :INFO : test_EmbibeExplainers :Test case Executed : Playing Videos present in the Embibe Explainers Carousel
+2024-01-06 23:07:39,356 :INFO : test_EmbibeExplainers :Test case Executed : Playing Video present in the More Topics carousel present in Embibe Explainers details Page
+2024-01-06 23:07:39,357 :INFO : test_EmbibeExplainers :Test case Executed : Playing Video present in the Related Videos carousel present in Embibe Explainers details Page
+2024-01-06 23:07:46,209 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:07:46,209 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:07:46,209 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:07:46,209 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:07:46,209 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:07:46,209 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:08:40,292 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:08:40,292 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:08:40,292 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:08:40,292 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:08:40,292 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:08:40,292 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:08:40,292 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:22,107 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:22,107 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:22,107 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:22,107 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:22,107 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:22,107 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:22,107 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:22,107 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:09:56,463 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:20,354 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 
+2024-01-06 23:10:44,339 :INFO : test_signin :Test case : Sign In with Password 

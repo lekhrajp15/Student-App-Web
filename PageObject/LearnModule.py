@@ -7,16 +7,10 @@ import requests
 
 from selenium.webdriver.common.by import By
 
-
-
-
-
 class LearnModule():
     log = getLogger()
     def __init__(self, driver):
         self.driver=driver
-
-
 
     def test_apirequest(self):
         subname = self.driver.find_elements(By.XPATH, "//body/div[@id='app']/main[1]/div[2]/div[2]/div[2]/div[1]/div/div")
