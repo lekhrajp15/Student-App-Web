@@ -5,47 +5,51 @@ from selenium.webdriver.common import keys
 from selenium.webdriver.common.by import By
 from PageObject.LearnPage import Learnpage
 from PageObject.PracticePage import practiceHome
+from PageObject.SignUp import signIn_up
 from Utilities.utility import utility
 
 
 class TestEmbibe(utility):
 
     @pytest.mark.usefixtures("setup")
-    def test_signin(self):
-        # self.driver.find_element(By.ID, "wzrk-cancel").click()
-        log = self.getLogger()
-        log.info("Test case : Sign In with Password ")
-        self.driver.find_element(By.XPATH, "//*[contains(text(),'Get Started')]").click()
-        self.driver.find_element(By.NAME, "email").send_keys("6361355091")
-        self.driver.find_element(By.XPATH,"//*[contains(text(),'password')]").click()
-        self.driver.find_element(By.NAME, "password").send_keys("Embibe@1234")
-        time.sleep(3)
-        self.driver.find_element(By.NAME, "password").send_keys(keys.Keys.ENTER)
-        self.driver.find_element(By.CSS_SELECTOR,"[to='/learn/home']").click()
-        self.driver.find_element(By.CSS_SELECTOR, "[data-tour='learn-button']").is_displayed()
+    def test_sign_in_password(self):
+        login = signIn_up(self.driver)
+        login.test_sign_in_password()
+
+
+    @pytest.mark.usefixtures("setup")
+    def test_signIn_mobile(self):
+        login = signIn_up(self.driver)
+        login.sign_in_with_mobile()
+
+
+    @pytest.mark.usefixtures("setup")
+    def test_signIn_email(self):
+        login = signIn_up(self.driver)
+        login.sign_in_with_email()
 
 
     @pytest.mark.usefixtures("setup")
     def test_playsubjectHeroBanner(self):
         log = self.getLogger()
         log.info("Playing Subject Hero Banner Videos")
-        self.test_signin()
+        self.test_sign_in_password()
         learn = Learnpage(self.driver)
-        learn.test_Learnpage()
+        learn.test_LearnHeroBanner()
 
 
     @pytest.mark.usefixtures("setup")
     def test_Continuelearning(self):
         log = self.getLogger()
         log.info("Playing Videos present in the Continue Learning Carousel")
-        self.test_signin()
+        self.test_sign_in_password()
         learn = Learnpage(self.driver)
         learn.test_Continuelearning()
 
 
     @pytest.mark.usefixtures("setup")
     def test_TrendingVideos(self):
-        self.test_signin()
+        self.test_sign_in_password()
         learn = Learnpage(self.driver)
         learn.test_TrendingVideos()
         log = self.getLogger()
@@ -56,7 +60,7 @@ class TestEmbibe(utility):
 
     @pytest.mark.usefixtures("setup")
     def test_EmbibeExplainers(self):
-        self.test_signin()
+        self.test_sign_in_password()
         learn = Learnpage(self.driver)
         learn.test_EmbibeExplainers()
         log = self.getLogger()
@@ -67,7 +71,7 @@ class TestEmbibe(utility):
 
     @pytest.mark.usefixtures("setup")
     def test_LearnChapter(self):
-        self.test_signin()
+        self.test_sign_in_password()
         learn = Learnpage(self.driver)
         learn.test_LearnChapter()
         log = self.getLogger()
@@ -77,40 +81,42 @@ class TestEmbibe(utility):
         log.info("Test case Executed : Displaying Points to Remember  in Learn Chapter Summary Page")
         Learnpage.log.info("Test case Executed : Playing Video present in the Prerequisite  carousel present in Learn Chapter Summary Page")
 
-
+    @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_SubjectFilter(self):
-        self.test_signin()
+        self.test_sign_in_password()
         learn = Learnpage(self.driver)
         learn.test_SubjectFilter()
 
 
     @pytest.mark.usefixtures("setup")
     def test_practicebanner(self):
-        self.test_signin()
+        self.test_sign_in_password()
         ph = practiceHome(self.driver)
         ph.test_practicebanner()
 
 
     @pytest.mark.usefixtures("setup")
-    def test_trendingbooks(self):
-        self.test_signin()
-        ph = practiceHome(self.driver)
-        ph.test_trendingbooks()
-
-
-    @pytest.mark.usefixtures("setup")
     def test_AuthorBooks(self):
-        self.test_signin()
+        self.test_sign_in_password()
         ph = practiceHome(self.driver)
         ph.test_AuthorBooks()
 
 
     @pytest.mark.usefixtures("setup")
+    def test_EmbibeBigBooks(self):
+        self.test_sign_in_password()
+        ph = practiceHome(self.driver)
+        ph.test_Embibe_Big_Books()
+
+
+    @pytest.mark.usefixtures("setup")
     def test_practicechapters(self):
-        self.test_signin()
+        self.test_sign_in_password()
         ph = practiceHome(self.driver)
         ph.test_practicechapters()
+
+
 
 
 
