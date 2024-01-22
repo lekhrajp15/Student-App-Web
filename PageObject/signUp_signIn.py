@@ -3,7 +3,7 @@ from logging import getLogger, log
 
 from selenium.webdriver.common.by import By
 
-from PageObject.LearnPage import Learnpage
+from PageObject.learn_home_page import LearnHomePage
 
 
 class signIn_up:
@@ -30,14 +30,12 @@ class signIn_up:
 
     def sign_in_with_mobile(self):
         self.driver.find_element(*signIn_up.get_started).click()
-        self.driver.find_element( *signIn_up.email_field).send_keys("6361355091")
+        self.driver.find_element( *signIn_up.email_field).send_keys("lekhraj.p+15@embibe.com")
         self.driver.find_element(*signIn_up.enter_using_password).click()
         self.driver.find_element(*signIn_up.password_field).send_keys("Embibe@1234")
         self.driver.find_element(*signIn_up.proceed_btn).click()
-        embium_icon = self.driver.find_element(*signIn_up.embium_icon)
         self.driver.find_element(*signIn_up.learn_module).click()
-        embium_icon.is_displayed()
-        try:
+        try :
             embium_icon = self.driver.find_element(*signIn_up.embium_icon)
             embium_icon.is_displayed()
             signIn_up.log.info("Embium Icon is present")
@@ -46,7 +44,7 @@ class signIn_up:
 
     def sign_in_with_email(self):
         self.driver.find_element(*signIn_up.get_started).click()
-        self.driver.find_element(*signIn_up.email_field).send_keys("lekhraj.p@embibe.com")
+        self.driver.find_element(*signIn_up.email_field).send_keys("lekhraj.p+15@embibe.com")
         self.driver.find_element(*signIn_up.enter_using_password).click()
         self.driver.find_element(*signIn_up.password_field).send_keys("Embibe@1234")
         self.driver.find_element(*signIn_up.proceed_btn).click()
@@ -60,7 +58,7 @@ class signIn_up:
 
     def test_sign_in_password(self):
         self.driver.find_element(*signIn_up.get_started).click()
-        self.driver.find_element(*signIn_up.email_field).send_keys("6361355091")
+        self.driver.find_element(*signIn_up.email_field).send_keys("lekhraj.p+15@embibe.com")
         self.driver.find_element(*signIn_up.enter_using_password).click()
         self.driver.find_element(*signIn_up.password_field).send_keys("Embibe@1234")
         self.driver.find_element(*signIn_up.proceed_btn).click()
