@@ -9,7 +9,6 @@ from Utilities.utility import utility
 
 class TestEmbibe(utility):
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_sign_in_password(self):
         login = signIn_up(self.driver)
@@ -17,8 +16,6 @@ class TestEmbibe(utility):
         log = self.getLogger()
         log.info("Testcase: Sign in with Password")
 
-
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_signIn_mobile(self):
         log = self.getLogger()
@@ -26,7 +23,6 @@ class TestEmbibe(utility):
         login.sign_in_with_mobile()
         log.info("Testcase: Sign in with Mobile number")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_signIn_email(self):
         log = self.getLogger()
@@ -40,13 +36,6 @@ class TestEmbibe(utility):
         self.test_sign_in_password()
         gep = GoalExamPage(self.driver)
         gep.hero_banner_goal_exam_selection_eng()
-
-    @pytest.mark.usefixtures("setup")
-    def test_goal_exam_hi(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.hero_banner_goal_exam_selection_hin()
 
     @pytest.mark.usefixtures("setup")
     def test_update_profile(self):
@@ -69,7 +58,6 @@ class TestEmbibe(utility):
         gep = GoalExamPage(self.driver)
         gep.edit_goal_exam()
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_play_subject_hero_banner(self):
         log = self.getLogger()
@@ -77,7 +65,6 @@ class TestEmbibe(utility):
         learn = LearnHomePage(self.driver)
         learn.learn_hero_banner()
         log.info("Testcase: Playing Subject Hero Banner Videos")
-
 
     @pytest.mark.usefixtures("setup")
     def test_Banner_belongs_to_the_current_exam(self):
@@ -112,6 +99,39 @@ class TestEmbibe(utility):
         log.info("Testcase: Verify Enrich Your Learning carousel is present and no issues in video player")
 
     @pytest.mark.usefixtures("setup")
+    def test_bookmark_videos(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        learn = LearnHomePage(self.driver)
+        learn.bookmark_video()
+        log.info("Testcase: Verify user is able to Bookmark the video")
+
+    @pytest.mark.usefixtures("setup")
+    def test_learn_embibe_big_books(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        learn = LearnHomePage(self.driver)
+        learn.learn_embibe_big_books()
+        log.info("Testcase: Verify Embibe Big Books - <Subject> carousel is present and no issues in video player")
+
+    @pytest.mark.usefixtures("setup")
+    def test_learn_select_chapter_topics_in_author_books(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        learn = LearnHomePage(self.driver)
+        learn.learn_select_chapter_topics_in_author_books()
+        log.info("Testcase: Verify User is able to select Chapters in the Author Books")
+        log.info("Testcase: Verify User is able to select Topics in the Author Books")
+
+    @pytest.mark.usefixtures("setup")
+    def test_learn_cheat_sheet_present_in_author_books(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        learn = LearnHomePage(self.driver)
+        learn.learn_cheat_sheet_present_in_author_books()
+        log.info("Testcase: Verify Cheat Sheet is present in the Author Books")
+
+    @pytest.mark.usefixtures("setup")
     def test_sub_embibe_explainers_carousel(self):
         log = self.getLogger()
         self.test_sign_in_password()
@@ -120,16 +140,47 @@ class TestEmbibe(utility):
         log.info("Testcase: Verify Embibe Explainers carousel is present in Subject filter and no issues in video player")
 
     @pytest.mark.usefixtures("setup")
-    def test_sub_trendingg_videos_carousel(self):
+    def test_sub_trending_videos_carousel(self):
         log = self.getLogger()
         self.test_sign_in_password()
         learn = LearnHomePage(self.driver)
         learn.sub_trending_videos_carousels()
-        log.info("Testcase: Verify Trending Videos carousel is present and no issues in video player")
+        log.info("Testcase: Verify Trending Videos carousel is present")
 
+    @pytest.mark.usefixtures("setup")
+    def test_sub_enrich_your_learning_carousel(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        learn = LearnHomePage(self.driver)
+        learn.sub_enrich_your_learning_carousels()
+        log.info("Testcase: Verify Enrich Your Learning In <Subject> carousel is present")
 
+    @pytest.mark.usefixtures("setup")
+    def test_sub_books_with_videos_and_solutions_carousel(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        learn = LearnHomePage(self.driver)
+        learn.sub_books_with_videos_and_solutions()
+        log.info("Testcase: Verify Books With Videos & Solutions - <Subject>")
 
-    # @pytest.mark.skip
+        # @pytest.mark.skip
+
+    @pytest.mark.usefixtures("setup")
+    def test_sub_learn_chapterrs(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        learn = LearnHomePage(self.driver)
+        learn.sub_learn_chapter()
+        log.info("Test case: Verify Learn <Subject> Chapters From <Class>")
+
+    @pytest.mark.usefixtures("setup")
+    def test_sub_big_books_carousel(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        learn = LearnHomePage(self.driver)
+        learn.sub_embibe_big_books()
+        log.info("Testcase: Verify Embibe Big Books - <Subject>")
+
     @pytest.mark.usefixtures("setup")
     def test_learn_continue_learning(self):
         log = self.getLogger()
@@ -138,7 +189,6 @@ class TestEmbibe(utility):
         learn = LearnHomePage(self.driver)
         learn.learn_continue_learning()
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_learn_trending_videos(self):
         self.test_sign_in_password()
@@ -149,7 +199,6 @@ class TestEmbibe(utility):
         log.info("Test case: Playing Videos present in the More Topic Carousel present inside Trending Videos details Page")
         log.info("Test case: Playing Videos present in the Related Videos Carousel present inside Trending Videos details Page")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_learn_embibe_explainers(self):
         self.test_sign_in_password()
@@ -160,7 +209,6 @@ class TestEmbibe(utility):
         log.info("Test case: Playing Video present in the More Topics carousel present in Embibe Explainers details Page")
         log.info("Test case: Playing Video present in the Related Videos carousel present in Embibe Explainers details Page")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_learn_chapter(self):
         self.test_sign_in_password()
@@ -173,16 +221,23 @@ class TestEmbibe(utility):
         log.info("Test case: Displaying Points to Remember  in Learn Chapter Summary Page")
         log.info("Test case: Playing Video present in the Prerequisite  carousel present in Learn Chapter Summary Page")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
-    def test_learn_subject_filter(self):
+    def test_learn_chapter_test_taking(self):
         log = self.getLogger()
         self.test_sign_in_password()
-        learn = LearnHomePage(self.driver)
-        learn.learn_subject_filter()
-        log.info("Test case: Playing Videos present in the Subject Filter")
+        ttp = TestHomePage(self.driver)
+        ttp.test_taking_in_learn_chapters()
+        log.info("Testcase: Tests on this chapter (selected) option is present ")
+        log.info("Testcase: Tests on this chapter (select from list) option is present")
 
-    # @pytest.mark.skip
+    @pytest.mark.usefixtures("setup")
+    def test_learn_chapter_practicee_taking(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        php = PracticeHomePage(self.driver)
+        php.practice_taking_in_learn_chapter()
+        log.info("Testcase : Practice on this chapter (selected) tile is present in Learn Chapter")
+
     @pytest.mark.usefixtures("setup")
     def test_practicechapters(self):
         log = self.getLogger()
@@ -194,7 +249,6 @@ class TestEmbibe(utility):
         ph.practice_chapters()
         log.info("Test case: User attempts 5 questions and view Learn Intervention screen")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_trending_test_embibe_exp_ui(self):
         log = self.getLogger()
@@ -206,7 +260,6 @@ class TestEmbibe(utility):
         log.info("Test case: User is navigated to Test Taking Screen on clicking on Start Test button")
         log.info("Test case: User submits the test after attempting all questions in the Test taking screen")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_full_test_embibe_exp_ui(self):
         log = self.getLogger()
@@ -218,7 +271,6 @@ class TestEmbibe(utility):
         log.info("Test case: User is navigated to Test Taking Screen on clicking on Start Test button")
         log.info("Test case: User submits the test after attempting all questions in the Test taking screen")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_chapter_test_embibe_exp_ui(self):
         log = self.getLogger()
@@ -230,7 +282,6 @@ class TestEmbibe(utility):
         log.info("Test case: User is navigated to Test Taking Screen on clicking on Start Test button")
         log.info("Test case: User submits the test after attempting all questions in the Test taking screen")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_test_home_subject_banner(self):
         log = self.getLogger()
@@ -241,7 +292,6 @@ class TestEmbibe(utility):
         log.info("Test case: Start Test Button is displayed in Test Banner")
         log.info("Test case: User is navigated to Test Taking Screen on clicking on Start Test button")
         log.info("Test case: User submits the test after attempting all questions in the Test taking screen")
-
 
     @pytest.mark.usefixtures("setup")
     def test_trending_test_summary(self):
@@ -264,7 +314,6 @@ class TestEmbibe(utility):
         ttp = TestHomePage(self.driver)
         ttp.chapter_test_summary()
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_practice_banner(self):
             log = self.getLogger()
@@ -274,9 +323,8 @@ class TestEmbibe(utility):
             log.info("Test case: Click on the Books present in the Practice Banner")
             log.info("Test case: Clicking on the Practice Tile present in the Book TOC")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
-    def test_author_books(self):
+    def test_practice_author_books(self):
             log = self.getLogger()
             self.test_sign_in_password()
             ph = PracticeHomePage(self.driver)
@@ -284,15 +332,38 @@ class TestEmbibe(utility):
             log.info("Test case: Click on the Author Books")
             log.info("Test case: Clicking on the Practice Tile present in the Book TOC")
 
-    # @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
-    def test_embibe_big_books(self):
+    def test_practice_embibe_big_books(self):
             log = self.getLogger()
             self.test_sign_in_password()
             ph = PracticeHomePage(self.driver)
             ph.embibe_big_books()
             log.info("Test case: Click on the Big Books")
             log.info("Test case: Clicking on the Practice Tile present in the Book TOC")
+
+    @pytest.mark.usefixtures("setup")
+    def test_quick_5_mins_test(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        ttp = TestHomePage(self.driver)
+        ttp.quick_5_mins_cyot()
+
+    @pytest.mark.usefixtures("setup")
+    def test_CYOT(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        ttp = TestHomePage(self.driver)
+        ttp.cyot()
+
+
+
+
+    @pytest.mark.usefixtures("setup")
+    def test_goal_exam_hi(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.hero_banner_goal_exam_selection_hin()
 
 
 

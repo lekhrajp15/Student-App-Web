@@ -18,8 +18,12 @@ class PracticeHomePage():
     Practice_Chapter = (By.XPATH, "//*[contains(text(),'Adaptive Practice Chapters From')]/parent::div/div[2]/div/div/div[1]/div/div/div")
     Embibe_big_books = (By.XPATH, "//*[contains(text(), 'Embibe Big Books')]/parent::div/div[2]/div/div[1]/div[1]/div/div/div[1]")
     practice_now_btn = (By.XPATH, "//*[text()='Practice Now']")
+    learn_chapter_test_tile = (By.XPATH, "//*[@class='learn-summary-wrapper__section-data-wrapper']/div/div[2]/div[2]/div[1]/div[1]")
     book_toc = (By.CSS_SELECTOR, "[class='toc-content']>div")
+    learn_chapter = (By.XPATH, "//*[contains(text(), 'Chapters From')]/parent::div/div[2]/div/div/div[1]/div/div/div")
     book_chapter_practice = (By.XPATH, "//ol[@class='toc-content']/li[@class='rowPracticeList practiceTile']/img[@alt='practice']")
+    learn_chapter_practice_tile = (By.XPATH, "//body[1]/div[2]/main[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]")
+    practice_on_this_chapter = (By.XPATH, "//span[text()='Practice on this Chapter']")
 
     # def test_practicemodule(self):
     #     self.driver.find_element(*practiceHome.Practice_Module).click()
@@ -58,6 +62,16 @@ class PracticeHomePage():
         book_toc.is_displayed()
         self.driver.find_element(*PracticeHomePage.book_chapter_practice).click()
         self.practice_taking()
+
+    def practice_taking_in_learn_chapter(self):
+        self.driver.find_element(*PracticeHomePage.learn_chapter).click()
+        time.sleep(2)
+        self.driver.find_element(*PracticeHomePage.practice_on_this_chapter).click()
+        time.sleep(5)
+        self.driver.find_element(*PracticeHomePage.learn_chapter_practice_tile).click()
+        self.practice_taking()
+
+
 
 
     def practice_taking(self):
@@ -115,6 +129,16 @@ class PracticeHomePage():
                                             "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
                         self.driver.find_element(By.CSS_SELECTOR, "[id='fb-blank-0']").click()
                         self.driver.find_element(By.CSS_SELECTOR, "[status='DEFAULT']").send_keys("XYZ")
+                        self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
+                        time.sleep(5)
+                        self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
+
+                    elif question == "Integer":
+                        time.sleep(5)
+                        self.driver.find_element(By.XPATH,
+                                            "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
+                        self.driver.find_element(By.CSS_SELECTOR, "[id='fb-blank-0']").click()
+                        self.driver.find_element(By.CSS_SELECTOR, "[status='DEFAULT']").send_keys("1")
                         self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
                         time.sleep(5)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
