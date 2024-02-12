@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 11-Feb-2024 at 22:38:26 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.0.2</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">50 tests took 00:50:43.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to ge the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">5 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">45 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.9.1&#34;, &#34;Platform&#34;: &#34;macOS-10.16-x86_64-i386-64bit&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;7.4.2&#34;, &#34;pluggy&#34;: &#34;1.2.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.0.2&#34;, &#34;metadata&#34;: &#34;3.0.0&#34;, &#34;xdist&#34;: &#34;3.3.1&#34;, &#34;allure-pytest&#34;: &#34;2.13.2&#34;}, &#34;JAVA_HOME&#34;: &#34;/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home&#34;}, &#34;tests&#34;: {&#34;Test/test_E2E.py::TestEmbibe::test_sign_in_password&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_sign_in_password&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_sign_in_password&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_signIn_mobile&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_signIn_mobile&#34;, &#34;duration&#34;: &#34;00:00:25&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_signIn_mobile&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:25&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nERROR    root:signUp_signIn.py:43 Message: no such element: Unable to locate element: {\&#34;method\&#34;:\&#34;css selector\&#34;,\&#34;selector\&#34;:\&#34;[class=&#39;sc-lmHNfd hHTGNc&#39;]\&#34;}\n  (Session info: chrome=121.0.6167.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n0   chromedriver                        0x000000010f3b9168 chromedriver + 4673896\n1   chromedriver                        0x000000010f3b09c3 chromedriver + 4639171\n2   chromedriver                        0x000000010efa4fdd chromedriver + 397277\n3   chromedriver                        0x000000010eff0bfc chromedriver + 707580\n4   chromedriver                        0x000000010eff0dd1 chromedriver + 708049\n5   chromedriver                        0x000000010f035284 chromedriver + 987780\n6   chromedriver                        0x000000010f0138ed chromedriver + 850157\n7   chromedriver                        0x000000010f032796 chromedriver + 976790\n8   chromedriver                        0x000000010f013663 chromedriver + 849507\n9   chromedriver                        0x000000010efe31cf chromedriver + 651727\n10  chromedriver                        0x000000010efe41ae chromedriver + 655790\n11  chromedriver                        0x000000010f379380 chromedriver + 4412288\n12  chromedriver                        0x000000010f37e798 chromedriver + 4433816\n13  chromedriver                        0x000000010f35dd71 chromedriver + 4300145\n14  chromedriver                        0x000000010f37f4e6 chromedriver + 4437222\n15  chromedriver                        0x000000010f34fd3c chromedriver + 4242748\n16  chromedriver                        0x000000010f39f208 chromedriver + 4567560\n17  chromedriver                        0x000000010f39f3be chromedriver + 4567998\n18  chromedriver                        0x000000010f3b0603 chromedriver + 4638211\n19  libsystem_pthread.dylib             0x00007fff203b48fc _pthread_start + 224\n20  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\n\nINFO     test_signIn_mobile:test_E2E.py:25 Testcase: Sign in with Mobile number\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_signIn_email&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_signIn_email&#34;, &#34;duration&#34;: &#34;00:00:25&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_signIn_email&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:25&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nERROR    root:signUp_signIn.py:57 Message: no such element: Unable to locate element: {\&#34;method\&#34;:\&#34;css selector\&#34;,\&#34;selector\&#34;:\&#34;[class=&#39;sc-lmHNfd hHTGNc&#39;]\&#34;}\n  (Session info: chrome=121.0.6167.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n0   chromedriver                        0x0000000106ba6168 chromedriver + 4673896\n1   chromedriver                        0x0000000106b9d9c3 chromedriver + 4639171\n2   chromedriver                        0x0000000106791fdd chromedriver + 397277\n3   chromedriver                        0x00000001067ddbfc chromedriver + 707580\n4   chromedriver                        0x00000001067dddd1 chromedriver + 708049\n5   chromedriver                        0x0000000106822284 chromedriver + 987780\n6   chromedriver                        0x00000001068008ed chromedriver + 850157\n7   chromedriver                        0x000000010681f796 chromedriver + 976790\n8   chromedriver                        0x0000000106800663 chromedriver + 849507\n9   chromedriver                        0x00000001067d01cf chromedriver + 651727\n10  chromedriver                        0x00000001067d11ae chromedriver + 655790\n11  chromedriver                        0x0000000106b66380 chromedriver + 4412288\n12  chromedriver                        0x0000000106b6b798 chromedriver + 4433816\n13  chromedriver                        0x0000000106b4ad71 chromedriver + 4300145\n14  chromedriver                        0x0000000106b6c4e6 chromedriver + 4437222\n15  chromedriver                        0x0000000106b3cd3c chromedriver + 4242748\n16  chromedriver                        0x0000000106b8c208 chromedriver + 4567560\n17  chromedriver                        0x0000000106b8c3be chromedriver + 4567998\n18  chromedriver                        0x0000000106b9d603 chromedriver + 4638211\n19  libsystem_pthread.dylib             0x00007fff203b48fc _pthread_start + 224\n20  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\n\nINFO     test_signIn_email:test_E2E.py:32 Testcase: Sign in with Email ID\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_play_subject_hero_banner&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_play_subject_hero_banner&#34;, &#34;duration&#34;: &#34;00:00:55&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_play_subject_hero_banner&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:55&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_play_subject_hero_banner:test_E2E.py:40 Testcase: Playing Subject Hero Banner Videos\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_Banner_belongs_to_the_current_exam&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_Banner_belongs_to_the_current_exam&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_Banner_belongs_to_the_current_exam&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_Banner_belongs_to_the_current_exam:test_E2E.py:48 Testcase: Banner_belongs_to_the_current_exam\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_same_exam_subject_button_is_present_in_LPT_Modules&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_same_exam_subject_button_is_present_in_LPT_Modules&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_same_exam_subject_button_is_present_in_LPT_Modules&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_same_exam_subject_button_is_present_in_LPT_Modules:test_E2E.py:56 Testcase: Same Exam Subjects button is present in Learn,Practice, Test Module\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_click_each_module_Tab_is_navigating_to_its_module&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_click_each_module_Tab_is_navigating_to_its_module&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_click_each_module_Tab_is_navigating_to_its_module&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_click_each_module_Tab_is_navigating_to_its_module:test_E2E.py:64 Testcase: User is redirected to relevant screen on clicking on Learn/Practice/Test/Achieve/UserHome Tab\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_enrich_your_learning_carousel&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_enrich_your_learning_carousel&#34;, &#34;duration&#34;: &#34;00:00:35&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_enrich_your_learning_carousel&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:35&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_enrich_your_learning_carousel:test_E2E.py:72 Testcase: Verify Enrich Your Learning carousel is present and no issues in video player\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_bookmark_videos&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_bookmark_videos&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_bookmark_videos&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_bookmark_videos:test_E2E.py:80 Testcase: Verify user is able to Bookmark the video\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_embibe_big_books&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_embibe_big_books&#34;, &#34;duration&#34;: &#34;00:00:47&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_embibe_big_books&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:47&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_learn_embibe_big_books:test_E2E.py:88 Testcase: Verify Embibe Big Books - &lt;Subject&gt; carousel is present and no issues in video player\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_select_chapter_topics_in_author_books&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_select_chapter_topics_in_author_books&#34;, &#34;duration&#34;: &#34;00:00:18&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_select_chapter_topics_in_author_books&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:18&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_learn_select_chapter_topics_in_author_books:test_E2E.py:96 Testcase: Verify User is able to select Chapters in the Author Books\nINFO     test_learn_select_chapter_topics_in_author_books:test_E2E.py:97 Testcase: Verify User is able to select Topics in the Author Books\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_cheat_sheet_present_in_author_books&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_cheat_sheet_present_in_author_books&#34;, &#34;duration&#34;: &#34;00:00:28&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_cheat_sheet_present_in_author_books&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:28&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_learn_cheat_sheet_present_in_author_books:test_E2E.py:105 Testcase: Verify Cheat Sheet is present in the Author Books\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_sub_embibe_explainers_carousel&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_sub_embibe_explainers_carousel&#34;, &#34;duration&#34;: &#34;00:06:31&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_sub_embibe_explainers_carousel&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:06:31&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_sub_embibe_explainers_carousel:test_E2E.py:113 Testcase: Verify Embibe Explainers carousel is present in Subject filter and no issues in video player\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_sub_trending_videos_carousel&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: null, &#34;format_type&#34;: &#34;html&#34;, &#34;content&#34;: &#34;&lt;div&gt;&lt;img src=\&#34;Test/test_E2E.py_TestEmbibe_test_sub_trending_videos_carousel.png\&#34; alt=\&#34;screenshot\&#34; style=\&#34;width:304px;height:228px;\&#34; onclick=\&#34;window.open(this.src)\&#34; align=\&#34;right\&#34;/&gt;&lt;/div&gt;&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_sub_trending_videos_carousel&#34;, &#34;duration&#34;: &#34;00:02:20&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_sub_trending_videos_carousel&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:02:20&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;Test.test_E2E.TestEmbibe object at 0x7fa276d97370&amp;gt;\n\n    @pytest.mark.usefixtures(\&#34;setup\&#34;)\n    def test_sub_trending_videos_carousel(self):\n        log = self.getLogger()\n        self.test_sign_in_password()\n        learn = LearnHomePage(self.driver)\n&amp;gt;       learn.sub_trending_videos_carousels()\n\nTest/test_E2E.py:120: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPageObject/learn_home_page.py:502: in sub_trending_videos_carousels\n    self.driver.find_element(*LearnHomePage.related_video).click()\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py:93: in click\n    self._execute(Command.CLICK_ELEMENT)\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py:394: in _execute\n    return self._parent.execute(command, params)\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7fa276f206d0&amp;gt;\nresponse = {&#39;status&#39;: 400, &#39;value&#39;: &#39;{\&#34;value\&#34;:{\&#34;error\&#34;:\&#34;element click intercepted\&#34;,\&#34;message\&#34;:\&#34;element click intercepted: Element ...fff203b48fc _pthread_start + 224\\\\n24  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\\\\n\&#34;}}&#39;}\n\n    def check_response(self, response: Dict[str, Any]) -&amp;gt; None:\n        \&#34;\&#34;\&#34;Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \&#34;\&#34;\&#34;\n        status = response.get(\&#34;status\&#34;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\&#34;message\&#34;, \&#34;\&#34;)\n        screen: str = response.get(\&#34;screen\&#34;, \&#34;\&#34;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\&#34;value\&#34;, None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\&#34;value\&#34;]\n                    status = value.get(\&#34;error\&#34;, None)\n                    if not status:\n                        status = value.get(\&#34;status\&#34;, ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\&#34;value\&#34;) or value.get(\&#34;message\&#34;)\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\&#34;message\&#34;)\n                    else:\n                        message = value.get(\&#34;message\&#34;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\&#34;__\&#34;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\&#34;value\&#34;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \&#34;\&#34; and \&#34;message\&#34; in value:\n            message = value[\&#34;message\&#34;]\n    \n        screen = None  # type: ignore[assignment]\n        if \&#34;screen\&#34; in value:\n            screen = value[\&#34;screen\&#34;]\n    \n        stacktrace = None\n        st_value = value.get(\&#34;stackTrace\&#34;) or value.get(\&#34;stacktrace\&#34;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\&#34;\\n\&#34;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\&#34;lineNumber\&#34;, \&#34;\&#34;)\n                        file = frame.get(\&#34;fileName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if line:\n                            file = f\&#34;{file}:{line}\&#34;\n                        meth = frame.get(\&#34;methodName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if \&#34;className\&#34; in frame:\n                            meth = f\&#34;{frame[&#39;className&#39;]}.{meth}\&#34;\n                        msg = \&#34;    at %s (%s)\&#34;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \&#34;data\&#34; in value:\n                alert_text = value[\&#34;data\&#34;].get(\&#34;text\&#34;)\n            elif \&#34;alert\&#34; in value:\n                alert_text = value[\&#34;alert\&#34;].get(\&#34;text\&#34;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &amp;lt;span&amp;gt;...&amp;lt;/span&amp;gt; is not clickable at point (153, 441). Other element would receive the click: &amp;lt;iframe frameborder=\&#34;0\&#34; allowfullscreen=\&#34;\&#34; allow=\&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\&#34; title=\&#34;Alphabet Test - Alphabetical Order of Words | Verbal Reasoning | abhyasonline.in | Abhyas Academy |\&#34; width=\&#34;100%\&#34; height=\&#34;100%\&#34; src=\&#34;https://www.youtube.com/embed/OBbZN_6W6Z4?autoplay=0&amp;amp;mute=0&amp;amp;controls=1&amp;amp;origin=https%3A%2F%2Fwww.embibe.com&amp;amp;playsinline=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;enablejsapi=1&amp;amp;widgetid=1\&#34; id=\&#34;widget2\&#34; data-gtm-yt-inspected-27=\&#34;true\&#34;&amp;gt;&amp;lt;/iframe&amp;gt;\nE         (Session info: chrome=121.0.6167.160)\nE       Stacktrace:\nE       0   chromedriver                        0x00000001093f2168 chromedriver + 4673896\nE       1   chromedriver                        0x00000001093e99c3 chromedriver + 4639171\nE       2   chromedriver                        0x0000000108fddfdd chromedriver + 397277\nE       3   chromedriver                        0x0000000109030dee chromedriver + 736750\nE       4   chromedriver                        0x000000010902eb6a chromedriver + 727914\nE       5   chromedriver                        0x000000010902c3ca chromedriver + 717770\nE       6   chromedriver                        0x000000010902b1a5 chromedriver + 713125\nE       7   chromedriver                        0x000000010901e6a7 chromedriver + 661159\nE       8   chromedriver                        0x000000010904c8c2 chromedriver + 850114\nE       9   chromedriver                        0x000000010901e038 chromedriver + 659512\nE       10  chromedriver                        0x000000010904ca7e chromedriver + 850558\nE       11  chromedriver                        0x000000010906b796 chromedriver + 976790\nE       12  chromedriver                        0x000000010904c663 chromedriver + 849507\nE       13  chromedriver                        0x000000010901c1cf chromedriver + 651727\nE       14  chromedriver                        0x000000010901d1ae chromedriver + 655790\nE       15  chromedriver                        0x00000001093b2380 chromedriver + 4412288\nE       16  chromedriver                        0x00000001093b7798 chromedriver + 4433816\nE       17  chromedriver                        0x0000000109396d71 chromedriver + 4300145\nE       18  chromedriver                        0x00000001093b84e6 chromedriver + 4437222\nE       19  chromedriver                        0x0000000109388d3c chromedriver + 4242748\nE       20  chromedriver                        0x00000001093d8208 chromedriver + 4567560\nE       21  chromedriver                        0x00000001093d83be chromedriver + 4567998\nE       22  chromedriver                        0x00000001093e9603 chromedriver + 4638211\nE       23  libsystem_pthread.dylib             0x00007fff203b48fc _pthread_start + 224\nE       24  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\n\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py:229: ElementClickInterceptedException\n\n------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_sub_enrich_your_learning_carousel&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: null, &#34;format_type&#34;: &#34;html&#34;, &#34;content&#34;: &#34;&lt;div&gt;&lt;img src=\&#34;Test/test_E2E.py_TestEmbibe_test_sub_enrich_your_learning_carousel.png\&#34; alt=\&#34;screenshot\&#34; style=\&#34;width:304px;height:228px;\&#34; onclick=\&#34;window.open(this.src)\&#34; align=\&#34;right\&#34;/&gt;&lt;/div&gt;&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_sub_enrich_your_learning_carousel&#34;, &#34;duration&#34;: &#34;00:01:51&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_sub_enrich_your_learning_carousel&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:51&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;Test.test_E2E.TestEmbibe object at 0x7fa276d97400&amp;gt;\n\n    @pytest.mark.usefixtures(\&#34;setup\&#34;)\n    def test_sub_enrich_your_learning_carousel(self):\n        log = self.getLogger()\n        self.test_sign_in_password()\n        learn = LearnHomePage(self.driver)\n&amp;gt;       learn.sub_enrich_your_learning_carousels()\n\nTest/test_E2E.py:128: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPageObject/learn_home_page.py:603: in sub_enrich_your_learning_carousels\n    self.driver.find_element(*LearnHomePage.related_video).click()\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py:93: in click\n    self._execute(Command.CLICK_ELEMENT)\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py:394: in _execute\n    return self._parent.execute(command, params)\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7fa277162ac0&amp;gt;\nresponse = {&#39;status&#39;: 400, &#39;value&#39;: &#39;{\&#34;value\&#34;:{\&#34;error\&#34;:\&#34;element click intercepted\&#34;,\&#34;message\&#34;:\&#34;element click intercepted: Element ...fff203b48fc _pthread_start + 224\\\\n24  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\\\\n\&#34;}}&#39;}\n\n    def check_response(self, response: Dict[str, Any]) -&amp;gt; None:\n        \&#34;\&#34;\&#34;Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \&#34;\&#34;\&#34;\n        status = response.get(\&#34;status\&#34;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\&#34;message\&#34;, \&#34;\&#34;)\n        screen: str = response.get(\&#34;screen\&#34;, \&#34;\&#34;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\&#34;value\&#34;, None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\&#34;value\&#34;]\n                    status = value.get(\&#34;error\&#34;, None)\n                    if not status:\n                        status = value.get(\&#34;status\&#34;, ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\&#34;value\&#34;) or value.get(\&#34;message\&#34;)\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\&#34;message\&#34;)\n                    else:\n                        message = value.get(\&#34;message\&#34;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\&#34;__\&#34;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\&#34;value\&#34;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \&#34;\&#34; and \&#34;message\&#34; in value:\n            message = value[\&#34;message\&#34;]\n    \n        screen = None  # type: ignore[assignment]\n        if \&#34;screen\&#34; in value:\n            screen = value[\&#34;screen\&#34;]\n    \n        stacktrace = None\n        st_value = value.get(\&#34;stackTrace\&#34;) or value.get(\&#34;stacktrace\&#34;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\&#34;\\n\&#34;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\&#34;lineNumber\&#34;, \&#34;\&#34;)\n                        file = frame.get(\&#34;fileName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if line:\n                            file = f\&#34;{file}:{line}\&#34;\n                        meth = frame.get(\&#34;methodName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if \&#34;className\&#34; in frame:\n                            meth = f\&#34;{frame[&#39;className&#39;]}.{meth}\&#34;\n                        msg = \&#34;    at %s (%s)\&#34;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \&#34;data\&#34; in value:\n                alert_text = value[\&#34;data\&#34;].get(\&#34;text\&#34;)\n            elif \&#34;alert\&#34; in value:\n                alert_text = value[\&#34;alert\&#34;].get(\&#34;text\&#34;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &amp;lt;span&amp;gt;...&amp;lt;/span&amp;gt; is not clickable at point (153, 419). Other element would receive the click: &amp;lt;iframe frameborder=\&#34;0\&#34; allowfullscreen=\&#34;\&#34; allow=\&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\&#34; title=\&#34;What are Nouns? English Grammar for Beginners | Basic English | ESL\&#34; width=\&#34;100%\&#34; height=\&#34;100%\&#34; src=\&#34;https://www.youtube.com/embed/0QcIp_zvGi0?autoplay=0&amp;amp;mute=0&amp;amp;controls=1&amp;amp;origin=https%3A%2F%2Fwww.embibe.com&amp;amp;playsinline=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;enablejsapi=1&amp;amp;widgetid=3\&#34; id=\&#34;widget4\&#34; data-gtm-yt-inspected-12=\&#34;true\&#34;&amp;gt;&amp;lt;/iframe&amp;gt;\nE         (Session info: chrome=121.0.6167.160)\nE       Stacktrace:\nE       0   chromedriver                        0x00000001102a5168 chromedriver + 4673896\nE       1   chromedriver                        0x000000011029c9c3 chromedriver + 4639171\nE       2   chromedriver                        0x000000010fe90fdd chromedriver + 397277\nE       3   chromedriver                        0x000000010fee3dee chromedriver + 736750\nE       4   chromedriver                        0x000000010fee1b6a chromedriver + 727914\nE       5   chromedriver                        0x000000010fedf3ca chromedriver + 717770\nE       6   chromedriver                        0x000000010fede1a5 chromedriver + 713125\nE       7   chromedriver                        0x000000010fed16a7 chromedriver + 661159\nE       8   chromedriver                        0x000000010feff8c2 chromedriver + 850114\nE       9   chromedriver                        0x000000010fed1038 chromedriver + 659512\nE       10  chromedriver                        0x000000010feffa7e chromedriver + 850558\nE       11  chromedriver                        0x000000010ff1e796 chromedriver + 976790\nE       12  chromedriver                        0x000000010feff663 chromedriver + 849507\nE       13  chromedriver                        0x000000010fecf1cf chromedriver + 651727\nE       14  chromedriver                        0x000000010fed01ae chromedriver + 655790\nE       15  chromedriver                        0x0000000110265380 chromedriver + 4412288\nE       16  chromedriver                        0x000000011026a798 chromedriver + 4433816\nE       17  chromedriver                        0x0000000110249d71 chromedriver + 4300145\nE       18  chromedriver                        0x000000011026b4e6 chromedriver + 4437222\nE       19  chromedriver                        0x000000011023bd3c chromedriver + 4242748\nE       20  chromedriver                        0x000000011028b208 chromedriver + 4567560\nE       21  chromedriver                        0x000000011028b3be chromedriver + 4567998\nE       22  chromedriver                        0x000000011029c603 chromedriver + 4638211\nE       23  libsystem_pthread.dylib             0x00007fff203b48fc _pthread_start + 224\nE       24  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\n\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py:229: ElementClickInterceptedException\n\n------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_sub_books_with_videos_and_solutions_carousel&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: null, &#34;format_type&#34;: &#34;html&#34;, &#34;content&#34;: &#34;&lt;div&gt;&lt;img src=\&#34;Test/test_E2E.py_TestEmbibe_test_sub_books_with_videos_and_solutions_carousel.png\&#34; alt=\&#34;screenshot\&#34; style=\&#34;width:304px;height:228px;\&#34; onclick=\&#34;window.open(this.src)\&#34; align=\&#34;right\&#34;/&gt;&lt;/div&gt;&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_sub_books_with_videos_and_solutions_carousel&#34;, &#34;duration&#34;: &#34;00:00:55&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_sub_books_with_videos_and_solutions_carousel&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:55&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;Test.test_E2E.TestEmbibe object at 0x7fa276d978e0&amp;gt;\n\n    @pytest.mark.usefixtures(\&#34;setup\&#34;)\n    def test_sub_books_with_videos_and_solutions_carousel(self):\n        log = self.getLogger()\n        self.test_sign_in_password()\n        learn = LearnHomePage(self.driver)\n&amp;gt;       learn.sub_books_with_videos_and_solutions()\n\nTest/test_E2E.py:136: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPageObject/learn_home_page.py:621: in sub_books_with_videos_and_solutions\n    self.driver.find_element(By.CSS_SELECTOR, \&#34;[id=&#39;sub\&#34; + str(i) + \&#34;&#39;]\&#34;).click()\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:738: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\&#34;using\&#34;: by, \&#34;value\&#34;: value})[\&#34;value\&#34;]\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7fa27716b3d0&amp;gt;\nresponse = {&#39;status&#39;: 404, &#39;value&#39;: &#39;{\&#34;value\&#34;:{\&#34;error\&#34;:\&#34;no such element\&#34;,\&#34;message\&#34;:\&#34;no such element: Unable to locate element: {\\...fff203b48fc _pthread_start + 224\\\\n20  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\\\\n\&#34;}}&#39;}\n\n    def check_response(self, response: Dict[str, Any]) -&amp;gt; None:\n        \&#34;\&#34;\&#34;Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \&#34;\&#34;\&#34;\n        status = response.get(\&#34;status\&#34;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\&#34;message\&#34;, \&#34;\&#34;)\n        screen: str = response.get(\&#34;screen\&#34;, \&#34;\&#34;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\&#34;value\&#34;, None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\&#34;value\&#34;]\n                    status = value.get(\&#34;error\&#34;, None)\n                    if not status:\n                        status = value.get(\&#34;status\&#34;, ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\&#34;value\&#34;) or value.get(\&#34;message\&#34;)\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\&#34;message\&#34;)\n                    else:\n                        message = value.get(\&#34;message\&#34;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\&#34;__\&#34;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\&#34;value\&#34;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \&#34;\&#34; and \&#34;message\&#34; in value:\n            message = value[\&#34;message\&#34;]\n    \n        screen = None  # type: ignore[assignment]\n        if \&#34;screen\&#34; in value:\n            screen = value[\&#34;screen\&#34;]\n    \n        stacktrace = None\n        st_value = value.get(\&#34;stackTrace\&#34;) or value.get(\&#34;stacktrace\&#34;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\&#34;\\n\&#34;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\&#34;lineNumber\&#34;, \&#34;\&#34;)\n                        file = frame.get(\&#34;fileName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if line:\n                            file = f\&#34;{file}:{line}\&#34;\n                        meth = frame.get(\&#34;methodName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if \&#34;className\&#34; in frame:\n                            meth = f\&#34;{frame[&#39;className&#39;]}.{meth}\&#34;\n                        msg = \&#34;    at %s (%s)\&#34;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \&#34;data\&#34; in value:\n                alert_text = value[\&#34;data\&#34;].get(\&#34;text\&#34;)\n            elif \&#34;alert\&#34; in value:\n                alert_text = value[\&#34;alert\&#34;].get(\&#34;text\&#34;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\&#34;method\&#34;:\&#34;css selector\&#34;,\&#34;selector\&#34;:\&#34;[id=&#39;sub1&#39;]\&#34;}\nE         (Session info: chrome=121.0.6167.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nE       Stacktrace:\nE       0   chromedriver                        0x0000000107066168 chromedriver + 4673896\nE       1   chromedriver                        0x000000010705d9c3 chromedriver + 4639171\nE       2   chromedriver                        0x0000000106c51fdd chromedriver + 397277\nE       3   chromedriver                        0x0000000106c9dbfc chromedriver + 707580\nE       4   chromedriver                        0x0000000106c9ddd1 chromedriver + 708049\nE       5   chromedriver                        0x0000000106ce2284 chromedriver + 987780\nE       6   chromedriver                        0x0000000106cc08ed chromedriver + 850157\nE       7   chromedriver                        0x0000000106cdf796 chromedriver + 976790\nE       8   chromedriver                        0x0000000106cc0663 chromedriver + 849507\nE       9   chromedriver                        0x0000000106c901cf chromedriver + 651727\nE       10  chromedriver                        0x0000000106c911ae chromedriver + 655790\nE       11  chromedriver                        0x0000000107026380 chromedriver + 4412288\nE       12  chromedriver                        0x000000010702b798 chromedriver + 4433816\nE       13  chromedriver                        0x000000010700ad71 chromedriver + 4300145\nE       14  chromedriver                        0x000000010702c4e6 chromedriver + 4437222\nE       15  chromedriver                        0x0000000106ffcd3c chromedriver + 4242748\nE       16  chromedriver                        0x000000010704c208 chromedriver + 4567560\nE       17  chromedriver                        0x000000010704c3be chromedriver + 4567998\nE       18  chromedriver                        0x000000010705d603 chromedriver + 4638211\nE       19  libsystem_pthread.dylib             0x00007fff203b48fc _pthread_start + 224\nE       20  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\n\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py:229: NoSuchElementException\n\n------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_sub_learn_chapterrs&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: null, &#34;format_type&#34;: &#34;html&#34;, &#34;content&#34;: &#34;&lt;div&gt;&lt;img src=\&#34;Test/test_E2E.py_TestEmbibe_test_sub_learn_chapterrs.png\&#34; alt=\&#34;screenshot\&#34; style=\&#34;width:304px;height:228px;\&#34; onclick=\&#34;window.open(this.src)\&#34; align=\&#34;right\&#34;/&gt;&lt;/div&gt;&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_sub_learn_chapterrs&#34;, &#34;duration&#34;: &#34;00:02:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_sub_learn_chapterrs&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:02:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;Test.test_E2E.TestEmbibe object at 0x7fa276d97190&amp;gt;\n\n    @pytest.mark.usefixtures(\&#34;setup\&#34;)\n    def test_sub_learn_chapterrs(self):\n        log = self.getLogger()\n        self.test_sign_in_password()\n        learn = LearnHomePage(self.driver)\n&amp;gt;       learn.sub_learn_chapter()\n\nTest/test_E2E.py:146: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPageObject/learn_home_page.py:321: in sub_learn_chapter\n    self.driver.find_element(*LearnHomePage.ptr).click()\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py:93: in click\n    self._execute(Command.CLICK_ELEMENT)\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py:394: in _execute\n    return self._parent.execute(command, params)\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7fa2771aebb0&amp;gt;\nresponse = {&#39;status&#39;: 400, &#39;value&#39;: &#39;{\&#34;value\&#34;:{\&#34;error\&#34;:\&#34;element click intercepted\&#34;,\&#34;message\&#34;:\&#34;element click intercepted: Element ...fff203b48fc _pthread_start + 224\\\\n24  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\\\\n\&#34;}}&#39;}\n\n    def check_response(self, response: Dict[str, Any]) -&amp;gt; None:\n        \&#34;\&#34;\&#34;Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \&#34;\&#34;\&#34;\n        status = response.get(\&#34;status\&#34;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\&#34;message\&#34;, \&#34;\&#34;)\n        screen: str = response.get(\&#34;screen\&#34;, \&#34;\&#34;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\&#34;value\&#34;, None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\&#34;value\&#34;]\n                    status = value.get(\&#34;error\&#34;, None)\n                    if not status:\n                        status = value.get(\&#34;status\&#34;, ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\&#34;value\&#34;) or value.get(\&#34;message\&#34;)\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\&#34;message\&#34;)\n                    else:\n                        message = value.get(\&#34;message\&#34;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\&#34;__\&#34;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\&#34;value\&#34;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \&#34;\&#34; and \&#34;message\&#34; in value:\n            message = value[\&#34;message\&#34;]\n    \n        screen = None  # type: ignore[assignment]\n        if \&#34;screen\&#34; in value:\n            screen = value[\&#34;screen\&#34;]\n    \n        stacktrace = None\n        st_value = value.get(\&#34;stackTrace\&#34;) or value.get(\&#34;stacktrace\&#34;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\&#34;\\n\&#34;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\&#34;lineNumber\&#34;, \&#34;\&#34;)\n                        file = frame.get(\&#34;fileName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if line:\n                            file = f\&#34;{file}:{line}\&#34;\n                        meth = frame.get(\&#34;methodName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if \&#34;className\&#34; in frame:\n                            meth = f\&#34;{frame[&#39;className&#39;]}.{meth}\&#34;\n                        msg = \&#34;    at %s (%s)\&#34;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \&#34;data\&#34; in value:\n                alert_text = value[\&#34;data\&#34;].get(\&#34;text\&#34;)\n            elif \&#34;alert\&#34; in value:\n                alert_text = value[\&#34;alert\&#34;].get(\&#34;text\&#34;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &amp;lt;span&amp;gt;...&amp;lt;/span&amp;gt; is not clickable at point (174, 533). Other element would receive the click: &amp;lt;iframe frameborder=\&#34;0\&#34; allowfullscreen=\&#34;\&#34; allow=\&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\&#34; title=\&#34;Alphabet Test - Alphabetical Order of Words | Verbal Reasoning | abhyasonline.in | Abhyas Academy |\&#34; width=\&#34;100%\&#34; height=\&#34;100%\&#34; src=\&#34;https://www.youtube.com/embed/OBbZN_6W6Z4?autoplay=0&amp;amp;mute=0&amp;amp;controls=1&amp;amp;origin=https%3A%2F%2Fwww.embibe.com&amp;amp;playsinline=1&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;enablejsapi=1&amp;amp;widgetid=1\&#34; id=\&#34;widget2\&#34; data-gtm-yt-inspected-12=\&#34;true\&#34;&amp;gt;&amp;lt;/iframe&amp;gt;\nE         (Session info: chrome=121.0.6167.160)\nE       Stacktrace:\nE       0   chromedriver                        0x000000010cab6168 chromedriver + 4673896\nE       1   chromedriver                        0x000000010caad9c3 chromedriver + 4639171\nE       2   chromedriver                        0x000000010c6a1fdd chromedriver + 397277\nE       3   chromedriver                        0x000000010c6f4dee chromedriver + 736750\nE       4   chromedriver                        0x000000010c6f2b6a chromedriver + 727914\nE       5   chromedriver                        0x000000010c6f03ca chromedriver + 717770\nE       6   chromedriver                        0x000000010c6ef1a5 chromedriver + 713125\nE       7   chromedriver                        0x000000010c6e26a7 chromedriver + 661159\nE       8   chromedriver                        0x000000010c7108c2 chromedriver + 850114\nE       9   chromedriver                        0x000000010c6e2038 chromedriver + 659512\nE       10  chromedriver                        0x000000010c710a7e chromedriver + 850558\nE       11  chromedriver                        0x000000010c72f796 chromedriver + 976790\nE       12  chromedriver                        0x000000010c710663 chromedriver + 849507\nE       13  chromedriver                        0x000000010c6e01cf chromedriver + 651727\nE       14  chromedriver                        0x000000010c6e11ae chromedriver + 655790\nE       15  chromedriver                        0x000000010ca76380 chromedriver + 4412288\nE       16  chromedriver                        0x000000010ca7b798 chromedriver + 4433816\nE       17  chromedriver                        0x000000010ca5ad71 chromedriver + 4300145\nE       18  chromedriver                        0x000000010ca7c4e6 chromedriver + 4437222\nE       19  chromedriver                        0x000000010ca4cd3c chromedriver + 4242748\nE       20  chromedriver                        0x000000010ca9c208 chromedriver + 4567560\nE       21  chromedriver                        0x000000010ca9c3be chromedriver + 4567998\nE       22  chromedriver                        0x000000010caad603 chromedriver + 4638211\nE       23  libsystem_pthread.dylib             0x00007fff203b48fc _pthread_start + 224\nE       24  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\n\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py:229: ElementClickInterceptedException\n\n------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_sub_big_books_carousel&#34;: [{&#34;extras&#34;: [{&#34;name&#34;: null, &#34;format_type&#34;: &#34;html&#34;, &#34;content&#34;: &#34;&lt;div&gt;&lt;img src=\&#34;Test/test_E2E.py_TestEmbibe_test_sub_big_books_carousel.png\&#34; alt=\&#34;screenshot\&#34; style=\&#34;width:304px;height:228px;\&#34; onclick=\&#34;window.open(this.src)\&#34; align=\&#34;right\&#34;/&gt;&lt;/div&gt;&#34;, &#34;mime_type&#34;: null, &#34;extension&#34;: null}], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_sub_big_books_carousel&#34;, &#34;duration&#34;: &#34;00:01:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_sub_big_books_carousel&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;Test.test_E2E.TestEmbibe object at 0x7fa276d97490&amp;gt;\n\n    @pytest.mark.usefixtures(\&#34;setup\&#34;)\n    def test_sub_big_books_carousel(self):\n        log = self.getLogger()\n        self.test_sign_in_password()\n        learn = LearnHomePage(self.driver)\n&amp;gt;       learn.sub_embibe_big_books()\n\nTest/test_E2E.py:154: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPageObject/learn_home_page.py:730: in sub_embibe_big_books\n    self.driver.find_element(*LearnHomePage.last_subject_button).click()\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:738: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\&#34;using\&#34;: by, \&#34;value\&#34;: value})[\&#34;value\&#34;]\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7fa2771626d0&amp;gt;\nresponse = {&#39;status&#39;: 404, &#39;value&#39;: &#39;{\&#34;value\&#34;:{\&#34;error\&#34;:\&#34;no such element\&#34;,\&#34;message\&#34;:\&#34;no such element: Unable to locate element: {\\...fff203b48fc _pthread_start + 224\\\\n20  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\\\\n\&#34;}}&#39;}\n\n    def check_response(self, response: Dict[str, Any]) -&amp;gt; None:\n        \&#34;\&#34;\&#34;Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \&#34;\&#34;\&#34;\n        status = response.get(\&#34;status\&#34;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\&#34;message\&#34;, \&#34;\&#34;)\n        screen: str = response.get(\&#34;screen\&#34;, \&#34;\&#34;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\&#34;value\&#34;, None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\&#34;value\&#34;]\n                    status = value.get(\&#34;error\&#34;, None)\n                    if not status:\n                        status = value.get(\&#34;status\&#34;, ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\&#34;value\&#34;) or value.get(\&#34;message\&#34;)\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\&#34;message\&#34;)\n                    else:\n                        message = value.get(\&#34;message\&#34;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\&#34;__\&#34;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\&#34;value\&#34;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \&#34;\&#34; and \&#34;message\&#34; in value:\n            message = value[\&#34;message\&#34;]\n    \n        screen = None  # type: ignore[assignment]\n        if \&#34;screen\&#34; in value:\n            screen = value[\&#34;screen\&#34;]\n    \n        stacktrace = None\n        st_value = value.get(\&#34;stackTrace\&#34;) or value.get(\&#34;stacktrace\&#34;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\&#34;\\n\&#34;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\&#34;lineNumber\&#34;, \&#34;\&#34;)\n                        file = frame.get(\&#34;fileName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if line:\n                            file = f\&#34;{file}:{line}\&#34;\n                        meth = frame.get(\&#34;methodName\&#34;, \&#34;&amp;lt;anonymous&amp;gt;\&#34;)\n                        if \&#34;className\&#34; in frame:\n                            meth = f\&#34;{frame[&#39;className&#39;]}.{meth}\&#34;\n                        msg = \&#34;    at %s (%s)\&#34;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \&#34;data\&#34; in value:\n                alert_text = value[\&#34;data\&#34;].get(\&#34;text\&#34;)\n            elif \&#34;alert\&#34; in value:\n                alert_text = value[\&#34;alert\&#34;].get(\&#34;text\&#34;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\&#34;method\&#34;:\&#34;css selector\&#34;,\&#34;selector\&#34;:\&#34;[id=&#39;subL&#39;]\&#34;}\nE         (Session info: chrome=121.0.6167.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nE       Stacktrace:\nE       0   chromedriver                        0x00000001094b9168 chromedriver + 4673896\nE       1   chromedriver                        0x00000001094b09c3 chromedriver + 4639171\nE       2   chromedriver                        0x00000001090a4fdd chromedriver + 397277\nE       3   chromedriver                        0x00000001090f0bfc chromedriver + 707580\nE       4   chromedriver                        0x00000001090f0dd1 chromedriver + 708049\nE       5   chromedriver                        0x0000000109135284 chromedriver + 987780\nE       6   chromedriver                        0x00000001091138ed chromedriver + 850157\nE       7   chromedriver                        0x0000000109132796 chromedriver + 976790\nE       8   chromedriver                        0x0000000109113663 chromedriver + 849507\nE       9   chromedriver                        0x00000001090e31cf chromedriver + 651727\nE       10  chromedriver                        0x00000001090e41ae chromedriver + 655790\nE       11  chromedriver                        0x0000000109479380 chromedriver + 4412288\nE       12  chromedriver                        0x000000010947e798 chromedriver + 4433816\nE       13  chromedriver                        0x000000010945dd71 chromedriver + 4300145\nE       14  chromedriver                        0x000000010947f4e6 chromedriver + 4437222\nE       15  chromedriver                        0x000000010944fd3c chromedriver + 4242748\nE       16  chromedriver                        0x000000010949f208 chromedriver + 4567560\nE       17  chromedriver                        0x000000010949f3be chromedriver + 4567998\nE       18  chromedriver                        0x00000001094b0603 chromedriver + 4638211\nE       19  libsystem_pthread.dylib             0x00007fff203b48fc _pthread_start + 224\nE       20  libsystem_pthread.dylib             0x00007fff203b0443 thread_start + 15\n\nvenv/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py:229: NoSuchElementException\n\n------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_continue_learning&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_continue_learning&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_continue_learning&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_learn_continue_learning:test_E2E.py:160 Test case: Playing Videos present in the Continue Learning Carousel\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_trending_videos&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_trending_videos&#34;, &#34;duration&#34;: &#34;00:01:20&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_trending_videos&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:20&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_learn_trending_videos:test_E2E.py:171 Test case: Playing  Videos present in the Trending Videos\nINFO     test_learn_trending_videos:test_E2E.py:172 Test case: Playing Videos present in the More Topic Carousel present inside Trending Videos details Page\nINFO     test_learn_trending_videos:test_E2E.py:173 Test case: Playing Videos present in the Related Videos Carousel present inside Trending Videos details Page\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_embibe_explainers&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_embibe_explainers&#34;, &#34;duration&#34;: &#34;00:01:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_embibe_explainers&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_learn_embibe_explainers:test_E2E.py:181 Test case: Playing Videos present in the Embibe Explainers Carousel\nINFO     test_learn_embibe_explainers:test_E2E.py:182 Test case: Playing Video present in the More Topics carousel present in Embibe Explainers details Page\nINFO     test_learn_embibe_explainers:test_E2E.py:183 Test case: Playing Video present in the Related Videos carousel present in Embibe Explainers details Page\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_chapter&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_chapter&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_chapter&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_learn_chapter:test_E2E.py:191 Test case: Playing Video in the Continue Learning Carousel\nINFO     test_learn_chapter:test_E2E.py:192 Test case: Playing Video present in the All Videos carousel present in Learn Chapter Summary Page\nINFO     test_learn_chapter:test_E2E.py:193 Test case: Playing Video present in the Topic Videos carousel present in Learn Chapter Summary Page\nINFO     test_learn_chapter:test_E2E.py:194 Test case: Displaying Points to Remember  in Learn Chapter Summary Page\nINFO     test_learn_chapter:test_E2E.py:195 Test case: Playing Video present in the Prerequisite  carousel present in Learn Chapter Summary Page\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_chapter_test_taking&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_chapter_test_taking&#34;, &#34;duration&#34;: &#34;00:01:22&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_chapter_test_taking&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:22&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_learn_chapter_test_taking:test_E2E.py:203 Testcase: Tests on this chapter (selected) option is present \nINFO     test_learn_chapter_test_taking:test_E2E.py:204 Testcase: Tests on this chapter (select from list) option is present\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_learn_chapter_practicee_taking&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_learn_chapter_practicee_taking&#34;, &#34;duration&#34;: &#34;00:00:54&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_learn_chapter_practicee_taking&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:54&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_learn_chapter_practicee_taking:test_E2E.py:212 Testcase : Practice on this chapter (selected) tile is present in Learn Chapter\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_practicechapters&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_practicechapters&#34;, &#34;duration&#34;: &#34;00:00:47&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_practicechapters&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:47&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_practicechapters:test_E2E.py:219 Test case: Clicking on Practice Chapter in Practice Home\nINFO     test_practicechapters:test_E2E.py:220 Test case: Practice Now Button is displayed in the Practice Summary\nINFO     test_practicechapters:test_E2E.py:221 Test case: User is navigated to Practice Taking Screen on clicking on Practice Now button\nINFO     test_practicechapters:test_E2E.py:223 Test case: User attempts 5 questions and view Learn Intervention screen\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_trending_test_embibe_exp_ui&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_trending_test_embibe_exp_ui&#34;, &#34;duration&#34;: &#34;00:01:27&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_trending_test_embibe_exp_ui&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:27&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_trending_test_embibe_exp_ui:test_E2E.py:231 Test case: Click on Trending Test\nINFO     test_trending_test_embibe_exp_ui:test_E2E.py:232 Test case: Start Test Button is displayed in the Test Summary\nINFO     test_trending_test_embibe_exp_ui:test_E2E.py:233 Test case: User is navigated to Test Taking Screen on clicking on Start Test button\nINFO     test_trending_test_embibe_exp_ui:test_E2E.py:234 Test case: User submits the test after attempting all questions in the Test taking screen\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_full_test_embibe_exp_ui&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_full_test_embibe_exp_ui&#34;, &#34;duration&#34;: &#34;00:01:22&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_full_test_embibe_exp_ui&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:22&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_full_test_embibe_exp_ui:test_E2E.py:242 Test case: Click on Full Test\nINFO     test_full_test_embibe_exp_ui:test_E2E.py:243 Test case: Start Test Button is displayed in the Test Summary\nINFO     test_full_test_embibe_exp_ui:test_E2E.py:244 Test case: User is navigated to Test Taking Screen on clicking on Start Test button\nINFO     test_full_test_embibe_exp_ui:test_E2E.py:245 Test case: User submits the test after attempting all questions in the Test taking screen\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_chapter_test_embibe_exp_ui&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_chapter_test_embibe_exp_ui&#34;, &#34;duration&#34;: &#34;00:01:24&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_chapter_test_embibe_exp_ui&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:24&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_chapter_test_embibe_exp_ui:test_E2E.py:253 Test case: Click on Chapter Test\nINFO     test_chapter_test_embibe_exp_ui:test_E2E.py:254 Test case: Start Test Button is displayed in the Test Summary\nINFO     test_chapter_test_embibe_exp_ui:test_E2E.py:255 Test case: User is navigated to Test Taking Screen on clicking on Start Test button\nINFO     test_chapter_test_embibe_exp_ui:test_E2E.py:256 Test case: User submits the test after attempting all questions in the Test taking screen\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_test_home_subject_banner&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_test_home_subject_banner&#34;, &#34;duration&#34;: &#34;00:03:22&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_test_home_subject_banner&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:03:22&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_test_home_subject_banner:test_E2E.py:264 Test case: Click on Subject Button present in the Test Page\nINFO     test_test_home_subject_banner:test_E2E.py:265 Test case: Start Test Button is displayed in Test Banner\nINFO     test_test_home_subject_banner:test_E2E.py:266 Test case: User is navigated to Test Taking Screen on clicking on Start Test button\nINFO     test_test_home_subject_banner:test_E2E.py:267 Test case: User submits the test after attempting all questions in the Test taking screen\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_trending_test_summary&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_trending_test_summary&#34;, &#34;duration&#34;: &#34;00:00:16&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_trending_test_summary&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:16&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_recommended_practice_in_trending_test_summary:test_E2E.py:275 Test case: User clicks on Recommended Practice in Full Test Summary\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_recommended_learn_videos_in_trending_test_summary&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_recommended_learn_videos_in_trending_test_summary&#34;, &#34;duration&#34;: &#34;00:00:22&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_recommended_learn_videos_in_trending_test_summary&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:22&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_recommended_learn_videos_in_trending_test_summary:test_E2E.py:283 Test case: User clicks on Recommended Video in Trending Test Summary\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_chapter_test_summary&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_chapter_test_summary&#34;, &#34;duration&#34;: &#34;00:00:52&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_chapter_test_summary&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:52&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_recommended_practice_in_chapter_test_summary:test_E2E.py:291 Test case: User clicks on Recommended Learn in Chapter Test Summary\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_recommended_learn_in_chapter_test_summary&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_recommended_learn_in_chapter_test_summary&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_recommended_learn_in_chapter_test_summary&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_recommended_learn_in_chapter_test_summary:test_E2E.py:299 Test case: User clicks on Recommended Video in Chapter Test Summary\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_full_test_summary&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_full_test_summary&#34;, &#34;duration&#34;: &#34;00:00:57&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_recommended_practice_in_full_test_summary&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:57&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_recommended_practice_in_full_test_summary:test_E2E.py:307 Test case: User clicks on Recommended Practice in Full Test Summary\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_recommended_learn_in_full_test_summary&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_recommended_learn_in_full_test_summary&#34;, &#34;duration&#34;: &#34;00:00:18&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_recommended_learn_in_full_test_summary&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:18&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_recommended_learn_in_full_test_summary:test_E2E.py:315 Test case: User clicks on Recommended Video in Full Test Summary\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_practice_banner&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_practice_banner&#34;, &#34;duration&#34;: &#34;00:00:48&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_practice_banner&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:48&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_practice_banner:test_E2E.py:323 Test case: Click on the Books present in the Practice Banner\nINFO     test_practice_banner:test_E2E.py:324 Test case: Clicking on the Practice Tile present in the Book TOC\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_practice_author_books&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_practice_author_books&#34;, &#34;duration&#34;: &#34;00:00:47&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_practice_author_books&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:47&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_practice_author_books:test_E2E.py:332 Test case: Click on the Author Books\nINFO     test_practice_author_books:test_E2E.py:333 Test case: Clicking on the Practice Tile present in the Book TOC\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_practice_embibe_big_books&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_practice_embibe_big_books&#34;, &#34;duration&#34;: &#34;00:00:50&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_practice_embibe_big_books&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:50&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_practice_embibe_big_books:test_E2E.py:341 Test case: Click on the Big Books\nINFO     test_practice_embibe_big_books:test_E2E.py:342 Test case: Clicking on the Practice Tile present in the Book TOC\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_quick_5_mins_test&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_quick_5_mins_test&#34;, &#34;duration&#34;: &#34;00:00:47&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_quick_5_mins_test&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:47&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_quick_5_mins_test:test_E2E.py:350 Test case: Create CYOT - 5 Mins Test\nINFO     test_quick_5_mins_test:test_E2E.py:351 Test case: User is able to take CYOT - 5 Mins Test\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_CYOT&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_CYOT&#34;, &#34;duration&#34;: &#34;00:01:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_CYOT&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_CYOT:test_E2E.py:359 Test case: Create CYOT - Custom Test\nINFO     test_CYOT:test_E2E.py:360 Test case: User is able to take CYOT - Custom Test\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_goal_exam_hi&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_goal_exam_hi&#34;, &#34;duration&#34;: &#34;00:00:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_goal_exam_hi&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\nINFO     test_goal_exam_hi:test_E2E.py:368 Test case: User is able to select Hindi Language\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_search_videos&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_search_videos&#34;, &#34;duration&#34;: &#34;00:01:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_search_videos&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_search_books&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_search_books&#34;, &#34;duration&#34;: &#34;00:00:35&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_search_books&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:35&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_search_questions&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_search_questions&#34;, &#34;duration&#34;: &#34;00:00:21&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_search_questions&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:21&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_search_practise&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_search_practise&#34;, &#34;duration&#34;: &#34;00:01:16&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_search_practise&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:16&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_search_test&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_search_test&#34;, &#34;duration&#34;: &#34;00:01:27&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_search_test&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:01:27&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_goal_exam_en&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_goal_exam_en&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_goal_exam_en&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_update_profile&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_update_profile&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_update_profile&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_update_avatar&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_update_avatar&#34;, &#34;duration&#34;: &#34;00:00:15&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_update_avatar&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:15&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}], &#34;Test/test_E2E.py::TestEmbibe::test_profile_edit_goal_exam&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Test/test_E2E.py::TestEmbibe::test_profile_edit_goal_exam&#34;, &#34;duration&#34;: &#34;00:00:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Test/test_E2E.py::TestEmbibe::test_profile_edit_goal_exam&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     test_sign_in_password:test_E2E.py:18 Testcase: Sign in with Password\n\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`).classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
