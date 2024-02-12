@@ -2,6 +2,7 @@ import pytest
 from PageObject.goal_exam import GoalExamPage
 from PageObject.learn_home_page import LearnHomePage
 from PageObject.practice_home_page import PracticeHomePage
+from PageObject.search_page import SearchPage
 from PageObject.signUp_signIn import signIn_up
 from PageObject.test_home_page import TestHomePage
 from Utilities.utility import utility
@@ -29,34 +30,6 @@ class TestEmbibe(utility):
         login = signIn_up(self.driver)
         login.sign_in_with_email()
         log.info("Testcase: Sign in with Email ID")
-
-    @pytest.mark.usefixtures("setup")
-    def test_goal_exam_en(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.hero_banner_goal_exam_selection_eng()
-
-    @pytest.mark.usefixtures("setup")
-    def test_update_profile(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.edit_profile()
-
-    @pytest.mark.usefixtures("setup")
-    def test_update_avatar(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.edit_avatar()
-
-    @pytest.mark.usefixtures("setup")
-    def test_profile_edit_goal_exam(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.edit_goal_exam()
 
     @pytest.mark.usefixtures("setup")
     def test_play_subject_hero_banner(self):
@@ -294,25 +267,52 @@ class TestEmbibe(utility):
         log.info("Test case: User submits the test after attempting all questions in the Test taking screen")
 
     @pytest.mark.usefixtures("setup")
-    def test_trending_test_summary(self):
+    def test_recommended_practice_in_trending_test_summary(self):
         log = self.getLogger()
         self.test_sign_in_password()
         ttp = TestHomePage(self.driver)
-        ttp.trending_test_summary()
+        ttp.recommended_practice_in_trending_test_summary()
+        log.info("Test case: User clicks on Recommended Practice in Full Test Summary")
 
     @pytest.mark.usefixtures("setup")
-    def test_full_test_summary(self):
+    def test_recommended_learn_videos_in_trending_test_summary(self):
         log = self.getLogger()
         self.test_sign_in_password()
         ttp = TestHomePage(self.driver)
-        ttp.full_test_summary()
+        ttp.recommended_learn_video_in_trending_test_summary()
+        log.info("Test case: User clicks on Recommended Video in Trending Test Summary")
 
     @pytest.mark.usefixtures("setup")
-    def test_chapter_test_summary(self):
+    def test_recommended_practice_in_chapter_test_summary(self):
         log = self.getLogger()
         self.test_sign_in_password()
         ttp = TestHomePage(self.driver)
-        ttp.chapter_test_summary()
+        ttp.recommended_practice_in_chapter_test_summary()
+        log.info("Test case: User clicks on Recommended Learn in Chapter Test Summary")
+
+    @pytest.mark.usefixtures("setup")
+    def test_recommended_learn_in_chapter_test_summary(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        ttp = TestHomePage(self.driver)
+        ttp.recommended_learn_in_chapter_test_summary()
+        log.info("Test case: User clicks on Recommended Video in Chapter Test Summary")
+
+    @pytest.mark.usefixtures("setup")
+    def test_recommended_practice_in_full_test_summary(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        ttp = TestHomePage(self.driver)
+        ttp.recommended_practice_in_full_test_summary()
+        log.info("Test case: User clicks on Recommended Practice in Full Test Summary")
+
+    @pytest.mark.usefixtures("setup")
+    def test_recommended_learn_in_full_test_summary(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        ttp = TestHomePage(self.driver)
+        ttp.recommended_learn_in_full_test_summary()
+        log.info("Test case: User clicks on Recommended Video in Full Test Summary")
 
     @pytest.mark.usefixtures("setup")
     def test_practice_banner(self):
@@ -347,6 +347,8 @@ class TestEmbibe(utility):
         self.test_sign_in_password()
         ttp = TestHomePage(self.driver)
         ttp.quick_5_mins_cyot()
+        log.info("Test case: Create CYOT - 5 Mins Test")
+        log.info("Test case: User is able to take CYOT - 5 Mins Test")
 
     @pytest.mark.usefixtures("setup")
     def test_CYOT(self):
@@ -354,9 +356,8 @@ class TestEmbibe(utility):
         self.test_sign_in_password()
         ttp = TestHomePage(self.driver)
         ttp.cyot()
-
-
-
+        log.info("Test case: Create CYOT - Custom Test")
+        log.info("Test case: User is able to take CYOT - Custom Test")
 
     @pytest.mark.usefixtures("setup")
     def test_goal_exam_hi(self):
@@ -364,7 +365,71 @@ class TestEmbibe(utility):
         self.test_sign_in_password()
         gep = GoalExamPage(self.driver)
         gep.hero_banner_goal_exam_selection_hin()
+        log.info("Test case: User is able to select Hindi Language")
 
+    @pytest.mark.usefixtures("setup")
+    def test_search_videos(self):
+        self.test_sign_in_password()
+        SP = SearchPage(self.driver)
+        SP.search_videos_tabs()
+
+    @pytest.mark.usefixtures("setup")
+    def test_search_books(self):
+        self.test_sign_in_password()
+        SP = SearchPage(self.driver)
+        SP.search_books_tabs()
+
+    @pytest.mark.usefixtures("setup")
+    def test_search_questions(self):
+        self.test_sign_in_password()
+        SP = SearchPage(self.driver)
+        SP.search_questions_tab()
+
+    @pytest.mark.usefixtures("setup")
+    def test_search_practise(self):
+        self.test_sign_in_password()
+        SP = SearchPage(self.driver)
+        SP.search_practice_tab()
+
+    @pytest.mark.usefixtures("setup")
+    def test_search_test(self):
+        self.test_sign_in_password()
+        SP = SearchPage(self.driver)
+        SP.search_test_tab()
+
+    @pytest.mark.usefixtures("setup")
+    def test_search_questions(self):
+        self.test_sign_in_password()
+        SP = SearchPage(self.driver)
+        SP.search_questions_tab()
+
+    @pytest.mark.usefixtures("setup")
+    def test_goal_exam_en(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.hero_banner_goal_exam_selection_eng()
+
+    @pytest.mark.usefixtures("setup")
+    def test_update_profile(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.edit_profile()
+
+    @pytest.mark.usefixtures("setup")
+    def test_update_avatar(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.edit_avatar()
+
+    @pytest.mark.usefixtures("setup")
+    def test_profile_edit_goal_exam(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.edit_goal_exam()
 
 
 

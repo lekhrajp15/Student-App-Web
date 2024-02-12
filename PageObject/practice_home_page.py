@@ -96,11 +96,11 @@ class PracticeHomePage():
 
 
                     elif question == "Subjective":
-                        self.driver.find_element(By.XPATH,
-                                            "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
+                        # self.driver.find_element(By.XPATH,
+                        #                     "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
                         time.sleep(5)
                         self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
-                        time.sleep(5)
+                        time.sleep(10)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
 
@@ -110,7 +110,7 @@ class PracticeHomePage():
                         time.sleep(5)
                         self.driver.find_element(By.XPATH, "//*[text()='Solve With Us']").click()
                         self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
-                        time.sleep(5)
+                        time.sleep(10)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
                     elif question == "Subjective Answer":
@@ -119,7 +119,7 @@ class PracticeHomePage():
                                             "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
                         self.driver.find_element(By.XPATH, "//*[text()='Solve With Us']").click()
                         self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
-                        time.sleep(5)
+                        time.sleep(10)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
 
@@ -130,7 +130,7 @@ class PracticeHomePage():
                         self.driver.find_element(By.CSS_SELECTOR, "[id='fb-blank-0']").click()
                         self.driver.find_element(By.CSS_SELECTOR, "[status='DEFAULT']").send_keys("XYZ")
                         self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
-                        time.sleep(5)
+                        time.sleep(10)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
                     elif question == "Integer":
@@ -140,7 +140,7 @@ class PracticeHomePage():
                         self.driver.find_element(By.CSS_SELECTOR, "[id='fb-blank-0']").click()
                         self.driver.find_element(By.CSS_SELECTOR, "[status='DEFAULT']").send_keys("1")
                         self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
-                        time.sleep(5)
+                        time.sleep(10)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
                     elif question == "Multiple Fill in The Blanks":
@@ -154,7 +154,7 @@ class PracticeHomePage():
                         time.sleep(2)
                         self.driver.find_element(By.CSS_SELECTOR, "[id='fb-blank-1']>input").send_keys("abc")
                         self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
-                        time.sleep(5)
+                        time.sleep(10)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
 

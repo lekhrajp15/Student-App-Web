@@ -4,6 +4,7 @@ import time
 from selenium.webdriver.common import keys
 from selenium.webdriver.common.by import By
 import logging
+import configparser
 
 
 class utility:
@@ -19,4 +20,9 @@ class utility:
 
         logger.setLevel(logging.DEBUG)
         return logger
+
+    def read_config_file(self):
+        pass
+
+
 
