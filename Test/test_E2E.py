@@ -360,14 +360,6 @@ class TestEmbibe(utility):
         log.info("Test case: User is able to take CYOT - Custom Test")
 
     @pytest.mark.usefixtures("setup")
-    def test_goal_exam_hi(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.hero_banner_goal_exam_selection_hin()
-        log.info("Test case: User is able to select Hindi Language")
-
-    @pytest.mark.usefixtures("setup")
     def test_search_videos(self):
         self.test_sign_in_password()
         SP = SearchPage(self.driver)
@@ -386,7 +378,7 @@ class TestEmbibe(utility):
         SP.search_questions_tab()
 
     @pytest.mark.usefixtures("setup")
-    def test_search_practise(self):
+    def test_search_practice(self):
         self.test_sign_in_password()
         SP = SearchPage(self.driver)
         SP.search_practice_tab()
@@ -430,6 +422,14 @@ class TestEmbibe(utility):
         self.test_sign_in_password()
         gep = GoalExamPage(self.driver)
         gep.edit_goal_exam()
+
+    @pytest.mark.usefixtures("setup")
+    def test_goal_exam_hi(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.hero_banner_goal_exam_selection_hin()
+        log.info("Test case: User is able to select Hindi Language")
 
 
 

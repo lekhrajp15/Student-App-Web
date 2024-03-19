@@ -4,6 +4,7 @@ import time
 
 from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.edge.service import Service
 
 
@@ -19,15 +20,20 @@ def browser(request):
 def setup(request, browser):
     global driver
     if browser == "chrome":
-        obj = Service('/Users/lekhraj/PycharmProjects/EmbibeFramework/browsers driver/chromedriver')
+        obj = Service('C:\\Users\\lekhraj.p_embibe\\PycharmProjects\Student-App-Web\\browsers driver\\chromedriver.exe')
         chrome_options = Options()
         chrome_options.add_argument('--disable-notifications')
         driver = webdriver.Chrome(service=obj, options=chrome_options)
     elif browser == "edge":
-        obj = Service('/Users/lekhraj/PycharmProjects/EmbibeFramework/browsers driver/msedgedriver')
+        obj = Service('C:\\Users\\lekhraj.p_embibe\\PycharmProjects\\Student-App-Web\\browsers driver\\edge.exe')
         edge_options = EdgeOptions()
         edge_options.add_argument('--disable-notifications')
         driver = webdriver.Edge(service=obj, options=edge_options)
+    elif browser == "firefox":
+        obj = Service("C:\\Users\\lekhraj.p_embibe\\PycharmProjects\\Student-App-Web\\browsers driver\\geckodriver.exe")
+        firefox_options = Options()
+        firefox_options.add_argument("--disable-notifications")
+        driver= webdriver.Firefox(service=obj, options=firefox_options)
     driver.get("https://www.embibe.com")
     driver.maximize_window()
     driver.implicitly_wait(20)
@@ -60,5 +66,3 @@ def pytest_runtest_makereport(item, call):
 
 def _capture_screenshot(name):
     driver.get_screenshot_as_file(name)
-
-
