@@ -10,7 +10,7 @@ from selenium.webdriver.edge.service import Service
 
 driver = None
 def pytest_addoption(parser):
-    parser.addoption("--browser_name", action="store", default="chrome", help="Specify the browser name")
+    parser.addoption("--browser_name", action="store", default="edge", help="Specify the browser name")
 
 @pytest.fixture()
 def browser(request):
@@ -20,15 +20,15 @@ def browser(request):
 def setup(request, browser):
     global driver
     if browser == "chrome":
-        obj = Service('C:\\Users\\lekhraj.p_embibe\\PycharmProjects\Student-App-Web\\browsers driver\\chromedriver.exe')
+        obj = Service('/Users/lekhraj/PycharmProjects/StudentApp-Web/browsers driver/chromedriver')
         chrome_options = Options()
         chrome_options.add_argument('--disable-notifications')
         driver = webdriver.Chrome(service=obj, options=chrome_options)
     elif browser == "edge":
-        obj = Service('C:\\Users\\lekhraj.p_embibe\\PycharmProjects\\Student-App-Web\\browsers driver\\edge.exe')
+        obj = Service('/Users/lekhraj/PycharmProjects/StudentApp-Web/browsers driver/msedgedriver')
         edge_options = EdgeOptions()
         edge_options.add_argument('--disable-notifications')
-        driver = webdriver.Edge(service=obj, options=edge_options)
+        driver = webdriver.Edge(options=edge_options)
     elif browser == "firefox":
         obj = Service("C:\\Users\\lekhraj.p_embibe\\PycharmProjects\\Student-App-Web\\browsers driver\\geckodriver.exe")
         firefox_options = Options()
@@ -42,27 +42,27 @@ def setup(request, browser):
     yield driver
     driver.quit()
 
-@pytest.mark.hookwrapper
-def pytest_runtest_makereport(item, call):
-    """
-            Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
-            :param item:
-            """
-    pytest_html = item.config.pluginmanager.getplugin('html')
-    outcome = yield
-    report = outcome.get_result()
-    extra = getattr(report, 'extra', [])
-
-    if report.when == 'call' or report.when == "setup":
-        xfail = hasattr(report, 'wasxfail')
-        if (report.skipped and xfail) or (report.failed and not xfail):
-            file_name = report.nodeid.replace("::", "_") + ".png"
-            _capture_screenshot(file_name)
-            if file_name:
-                html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
-                       'onclick="window.open(this.src)" align="right"/></div>' % file_name
-                extra.append(pytest_html.extras.html(html))
-        report.extra = extra
-
-def _capture_screenshot(name):
-    driver.get_screenshot_as_file(name)
+# @pytest.mark.hookwrapper
+# def pytest_runtest_makereport(item, call):
+#     """
+#             Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
+#             :param item:
+#             """
+#     pytest_html = item.config.pluginmanager.getplugin('html')
+#     outcome = yield
+#     report = outcome.get_result()
+#     extra = getattr(report, 'extra', [])
+#
+#     if report.when == 'call' or report.when == "setup":
+#         xfail = hasattr(report, 'wasxfail')
+#         if (report.skipped and xfail) or (report.failed and not xfail):
+#             file_name = report.nodeid.replace("::", "_") + ".png"
+#             _capture_screenshot(file_name)
+#             if file_name:
+#                 html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
+#                        'onclick="window.open(this.src)" align="right"/></div>' % file_name
+#                 extra.append(pytest_html.extras.html(html))
+#         report.extra = extra
+#
+# def _capture_screenshot(name):
+#     driver.get_screenshot_as_file(name)

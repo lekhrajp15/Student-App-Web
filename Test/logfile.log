@@ -1,0 +1,73 @@
+2024-05-05 20:59:37,060 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:02:45,263 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:03:08,317 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-05-05 21:03:31,568 :INFO : test_signIn_email :Testcase: Sign in with Email ID
+2024-05-05 21:03:38,764 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:03:38,764 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:03:46,984 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:03:46,984 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:03:46,984 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:03:48,537 :INFO : test_click_each_module_Tab_is_navigating_to_its_module :Testcase: User is redirected to relevant screen on clicking on Learn/Practice/Test/Achieve/UserHome Tab
+2024-05-05 21:06:16,348 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:06:39,320 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-05-05 21:07:01,996 :INFO : test_signIn_email :Testcase: Sign in with Email ID
+2024-05-05 21:07:08,921 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:07:08,921 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:07:56,330 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:07:56,330 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:07:56,330 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:07:57,809 :INFO : test_click_each_module_Tab_is_navigating_to_its_module :Testcase: User is redirected to relevant screen on clicking on Learn/Practice/Test/Achieve/UserHome Tab
+2024-05-05 21:08:04,626 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:08:04,626 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:08:04,626 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:08:04,626 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:08:30,061 :INFO : test_enrich_your_learning_carousel :Testcase: Verify Enrich Your Learning carousel is present and no issues in video player
+2024-05-05 21:08:37,302 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:08:37,302 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:08:37,302 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:08:37,302 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:08:37,302 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:09:15,787 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:09:38,334 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-05-05 21:10:01,248 :INFO : test_signIn_email :Testcase: Sign in with Email ID
+2024-05-05 21:10:08,107 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:10:08,107 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:10:55,876 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:10:55,876 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:10:55,876 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:10:57,301 :INFO : test_click_each_module_Tab_is_navigating_to_its_module :Testcase: User is redirected to relevant screen on clicking on Learn/Practice/Test/Achieve/UserHome Tab
+2024-05-05 21:11:04,115 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:11:04,115 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:11:04,115 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:11:04,115 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:11:29,495 :INFO : test_enrich_your_learning_carousel :Testcase: Verify Enrich Your Learning carousel is present and no issues in video player
+2024-05-05 21:11:36,548 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:11:36,548 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:11:36,548 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:11:36,548 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:11:36,548 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:03,964 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:03,964 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:03,964 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:03,964 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:03,964 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:03,964 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:29,327 :INFO : test_learn_embibe_big_books :Testcase: Verify Embibe Big Books - <Subject> carousel is present and no issues in video player
+2024-05-05 21:12:36,714 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:36,714 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:36,714 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:36,714 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:36,714 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:36,714 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:12:36,714 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:02,072 :INFO : test_learn_select_chapter_topics_in_author_books :Testcase: Verify User is able to select Chapters in the Author Books
+2024-05-05 21:13:02,074 :INFO : test_learn_select_chapter_topics_in_author_books :Testcase: Verify User is able to select Topics in the Author Books
+2024-05-05 21:13:09,721 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:09,721 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:09,721 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:09,721 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:09,721 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:09,721 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:09,721 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:09,721 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-05-05 21:13:17,389 :INFO : test_learn_cheat_sheet_present_in_author_books :Testcase: Verify Cheat Sheet is present in the Author Books

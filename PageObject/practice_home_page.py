@@ -80,7 +80,7 @@ class PracticeHomePage():
 
             try:
                 question_element = self.driver.find_element(By.XPATH,
-                                                       "//div[@id='PracticeConatiner']/div/section/div/div[2]/span[2]")
+                                                       "//div[@class='Title_title__og5qd']/div[2]/span[2]")
                 question = question_element.text
 
                 if question_element.is_displayed():
@@ -175,7 +175,7 @@ class PracticeHomePage():
                 self.driver.find_element(By.XPATH, "//*[text()='Continue Practice']").click()
 
 
-        self.driver.find_element(By.XPATH, "//*[@class='Title_title__og5qd']/div/div[2]/i").click()
+        self.driver.find_element(By.CSS_SELECTOR, "i[class='demo-icon demo-icon--filled demo-icon--sm Title_endSessionIcon__2QErK']").click()
         self.driver.find_element(By.XPATH, "//*[text()='End Session']").click()
         time.sleep(5)
 
