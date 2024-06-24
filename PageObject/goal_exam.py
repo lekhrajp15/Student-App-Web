@@ -60,7 +60,7 @@ class GoalExamPage:
             else:
                 print("User language not changed")
             cp = configparser.ConfigParser()
-            cp.read('/Users/lekhraj/PycharmProjects/EmbibeFramework/Test/config.ini')
+            cp.read('/Users/lekhraj/PycharmProjects/StudentApp-Web/Test/config.ini')
             exam_name = cp.get('Prod', 'exam_name')
             self.driver.find_element(*GoalExamPage.exam_button).click()
             time.sleep(1)
@@ -99,6 +99,7 @@ class GoalExamPage:
         def edit_goal_exam(self):
             self.driver.find_element(*GoalExamPage.profile_icon).click()
             self.driver.find_element(*GoalExamPage.manage_profile).click()
+            time.sleep(3)
             self.driver.find_element(*GoalExamPage.profile_edit).click()
             self.driver.find_element(*GoalExamPage.edit_goal).click()
             self.driver.find_element(*GoalExamPage.goal_school).click()
@@ -106,14 +107,22 @@ class GoalExamPage:
             self.driver.find_element(*GoalExamPage.exam_tab).click()
             self.driver.find_element(*GoalExamPage.eng_lang_btn).click()
             self.driver.find_element(*GoalExamPage.lang_done_btn).click()
-            # self.driver.find_element(*GoalExamPage.avatar_click).click()
-            self.driver.find_element(By.XPATH, "//*[@to='/learn/home']").click()
-            ele = self.driver.find_element(By.XPATH, "//*[@to='/test/home']").text
-            # self.assertEqual(ele, 'test', f"Expected 'test', but got '{ele}'")
-            if ele == 'Test':
-                print("User Goal is Updated")
-            else:
-                print("User Goal not changed")
+            try:
+                avatar = self.driver.find_element(*GoalExamPage.avatar_click)
+                if avatar.is_displayed():
+                    avatar.click()
+                else:
+                    raise Exception("Avatar not displayed")
+            except:
+                self.driver.find_element(By.XPATH, "//*[@to='/learn/home']").click()
+                ele = self.driver.find_element(By.XPATH, "//*[@to='/test/home']").text
+                if ele == 'Test':
+                    print("User Goal is Updated")
+                else:
+                    print("User Goal not changed")
+
+
+
 
 
 

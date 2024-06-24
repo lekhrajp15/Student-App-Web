@@ -20,10 +20,10 @@ def browser(request):
 def setup(request, browser):
     global driver
     if browser == "chrome":
-        obj = Service('/Users/lekhraj/PycharmProjects/StudentApp-Web/browsers driver/chromedriver')
+        # obj = Service('/Users/lekhraj/PycharmProjects/StudentApp-Web/browsers driver/chromedriver')
         chrome_options = Options()
         chrome_options.add_argument('--disable-notifications')
-        driver = webdriver.Chrome(service=obj, options=chrome_options)
+        driver = webdriver.Chrome( options=chrome_options)
     elif browser == "edge":
         obj = Service('/Users/lekhraj/PycharmProjects/StudentApp-Web/browsers driver/msedgedriver')
         edge_options = EdgeOptions()

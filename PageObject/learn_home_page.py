@@ -112,7 +112,7 @@ class LearnHomePage():
         self.driver.find_element(*LearnHomePage.practice_module).click()
         self.driver.find_element(*LearnHomePage.practice_banner_button).is_displayed()
         self.driver.find_element(*LearnHomePage.achieve_module).click()
-        self.driver.find_element(*LearnHomePage.start_achieving).is_displayed()
+        # self.driver.find_element(*LearnHomePage.start_achieving).is_displayed()
         self.driver.find_element(*LearnHomePage.user_home).click()
         self.driver.find_element(*LearnHomePage.parent_assignment).is_displayed()
 

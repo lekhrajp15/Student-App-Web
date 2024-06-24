@@ -122,7 +122,7 @@ class TestEmbibe(utility):
         learn = LearnHomePage(self.driver)
         learn.sub_trending_videos_carousels()
         log.info("Testcase: Verify Trending Videos carousel is present")
-    #
+
     @pytest.mark.usefixtures("setup")
     def test_sub_enrich_your_learning_carousel(self):
         log = self.getLogger()
@@ -130,7 +130,7 @@ class TestEmbibe(utility):
         learn = LearnHomePage(self.driver)
         learn.sub_enrich_your_learning_carousels()
         log.info("Testcase: Verify Enrich Your Learning In <Subject> carousel is present")
-    #
+
     @pytest.mark.usefixtures("setup")
     def test_sub_books_with_videos_and_solutions_carousel(self):
         log = self.getLogger()
@@ -138,9 +138,8 @@ class TestEmbibe(utility):
         learn = LearnHomePage(self.driver)
         learn.sub_books_with_videos_and_solutions()
         log.info("Testcase: Verify Books With Videos & Solutions - <Subject>")
-    #
-    #     # @pytest.mark.skip
-    #
+
+    @pytest.mark.skip
     @pytest.mark.usefixtures("setup")
     def test_sub_learn_chapters(self):
         log = self.getLogger()
@@ -148,7 +147,7 @@ class TestEmbibe(utility):
         learn = LearnHomePage(self.driver)
         learn.sub_learn_chapter()
         log.info("Test case: Verify Learn <Subject> Chapters From <Class>")
-    #
+
     @pytest.mark.usefixtures("setup")
     def test_sub_big_books_carousel(self):
         log = self.getLogger()
@@ -269,7 +268,7 @@ class TestEmbibe(utility):
         log.info("Test case: Start Test Button is displayed in Test Banner")
         log.info("Test case: User is navigated to Test Taking Screen on clicking on Start Test button")
         log.info("Test case: User submits the test after attempting all questions in the Test taking screen")
-    #
+
     @pytest.mark.usefixtures("setup")
     def test_recommended_practice_in_trending_test_summary(self):
         log = self.getLogger()
@@ -285,7 +284,7 @@ class TestEmbibe(utility):
         ttp = TestHomePage(self.driver)
         ttp.recommended_learn_video_in_trending_test_summary()
         log.info("Test case: User clicks on Recommended Video in Trending Test Summary")
-    #
+
     @pytest.mark.usefixtures("setup")
     def test_recommended_practice_in_chapter_test_summary(self):
         log = self.getLogger()

@@ -134,7 +134,6 @@ class TestHomePage:
         self.driver.find_element(*TestHomePage.test_module).click()
         self.driver.find_element(*TestHomePage.cyot_tile).click()
         total_subject= self.driver.find_elements(*TestHomePage.step1_select_Chapters)
-        print(len(total_subject))
         for i in range(1, len(total_subject)):
             self.driver.find_element(By.XPATH,
                         "//div[contains(@class, 'test-subjects-wrapper--subject-selection')]/div/div/div[3]/div/div["+str(i)+"]").click()
@@ -156,7 +155,6 @@ class TestHomePage:
             self.driver.find_element(*TestHomePage.test_module).click()
             self.driver.find_element(*TestHomePage.cyot_tile).click()
             total_subject = self.driver.find_elements(*TestHomePage.step1_select_Chapters)
-            print(len(total_subject))
             for i in range(1, len(total_subject)):
                 self.driver.find_element(By.XPATH,
                                          "//div[contains(@class, 'test-subjects-wrapper--subject-selection')]/div/div/div[3]/div/div[" + str(
@@ -203,7 +201,6 @@ class TestHomePage:
             for k in range(1,len(ele)+1):
                 self.driver.find_element(By.XPATH, "//div[@class='test-wrapper ']/div/div[2]/div[1]/button["+str(k)+"]").click()
                 questions = self.driver.find_elements(*TestHomePage.question_count)
-                print(len(questions))
                 for i in range(1, len(questions)):
                     time.sleep(3)
                     question = self.driver.find_element(*TestHomePage.question_type).text
@@ -277,7 +274,6 @@ class TestHomePage:
         self.driver.find_element(*TestHomePage.test_module).click()
         total_subject = self.driver.find_elements(*TestHomePage.subject_buttons)
         count = len(total_subject)
-        print("total subject button present " +str(count))
         for i in range(1, count ):
             self.driver.find_element(By.CSS_SELECTOR, "[id='sub0" + str(i) + "']").click()
             self.test_taking()
