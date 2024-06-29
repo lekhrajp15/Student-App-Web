@@ -660,38 +660,38 @@ class LearnHomePage():
             except NoSuchElementException:
                 print("No Books with videos and solutions")
 
-        self.driver.find_element(*LearnHomePage.last_subject_button).click()
-        try:
-                self.driver.find_element(*LearnHomePage.author_books).is_displayed()
-                time.sleep(5)
-                # self.driver.find_element(*LearnHomePage.sub_embibe_explainers).click()
-                self.driver.find_element(*LearnHomePage.sub_author_books).click()
-                self.driver.find_element(*LearnHomePage.book_video_tile).click()
-                try:
-                    popup = self.driver.find_element(By.CSS_SELECTOR, "[class='sc-llJcti cLATmR sc-jfmDQi LQhpp']")
-                    if popup.is_displayed():
-                        time.sleep(2)
-                        self.driver.find_element(By.CSS_SELECTOR,
-                                                 "[class='sc-gicCDI kMRQrC']>button:nth-of-type(1)").click()
-                        time.sleep(10)
-                        for _ in range(5):
-                            self.driver.back()
-                except NoSuchElementException:
-                    time.sleep(10)
-                    # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
-                    # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
-                    # time.sleep(5)
-                    for _ in range(5):
-                        self.driver.back()
-
-                except ElementClickInterceptedException:
-                    time.sleep(5)
-                    # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
-                    # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
-                    for _ in range(5):
-                        self.driver.back()
-        except NoSuchElementException:
-                print("No Books with videos and solutions")
+        # self.driver.find_element(*LearnHomePage.last_subject_button).click()
+        # try:
+        #         self.driver.find_element(*LearnHomePage.author_books).is_displayed()
+        #         time.sleep(5)
+        #         # self.driver.find_element(*LearnHomePage.sub_embibe_explainers).click()
+        #         self.driver.find_element(*LearnHomePage.sub_author_books).click()
+        #         self.driver.find_element(*LearnHomePage.book_video_tile).click()
+        #         try:
+        #             popup = self.driver.find_element(By.CSS_SELECTOR, "[class='sc-llJcti cLATmR sc-jfmDQi LQhpp']")
+        #             if popup.is_displayed():
+        #                 time.sleep(2)
+        #                 self.driver.find_element(By.CSS_SELECTOR,
+        #                                          "[class='sc-gicCDI kMRQrC']>button:nth-of-type(1)").click()
+        #                 time.sleep(10)
+        #                 for _ in range(5):
+        #                     self.driver.back()
+        #         except NoSuchElementException:
+        #             time.sleep(10)
+        #             # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
+        #             # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
+        #             # time.sleep(5)
+        #             for _ in range(5):
+        #                 self.driver.back()
+        #
+        #         except ElementClickInterceptedException:
+        #             time.sleep(5)
+        #             # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
+        #             # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
+        #             for _ in range(5):
+        #                 self.driver.back()
+        # except NoSuchElementException:
+        #         print("No Books with videos and solutions")
 
     def sub_embibe_big_books(self):
         total_subject = self.driver.find_elements(*LearnHomePage.subject_buttons)

@@ -31,17 +31,18 @@ print(btn)
 try:
     if btn == 'Start Test':
         driver.find_element(By.XPATH, "//*[text()='Start Test']").click()
-        popup = driver.find_element(By.XPATH, "//*[@id='app']/main/div[3]/div/div/div")
-        if popup.is_displayed():
-            driver.find_element(By.XPATH, "//*[text()= 'Show me the EMBIBE Experience']").click()
-            driver.find_element(By.XPATH, "//*[contains(text(), 'I have ')]").click()
-            driver.find_element(By.XPATH, "//*[text()='Start Now']").click()
-
-        else:
-            driver.find_element(By.XPATH, "//*[contains(text(), 'I have ')]").click()
-            driver.find_element(By.XPATH, "//*[text()='Start Now']").click()
-    elif btn == 'Resume Test':
-        driver.find_element(By.XPATH, "//*[text()='Resume Test']").click()
+        time.sleep(10)
+        # popup = driver.find_element(By.XPATH, "//*[@id='app']/main/div[3]/div/div/div")
+        # if popup.is_displayed():
+        #     driver.find_element(By.XPATH, "//*[text()= 'Show me the EMBIBE Experience']").click()
+        #     driver.find_element(By.XPATH, "//*[contains(text(), 'I have ')]").click()
+        #     driver.find_element(By.XPATH, "//*[text()='Start Now']").click()
+        #
+        # else:
+        driver.find_element(By.XPATH, "//*[contains(text(), 'I have ')]").click()
+        driver.find_element(By.XPATH, "//*[text()='Start Now']").click()
+    elif btn == 'Resume':
+        driver.find_element(By.XPATH, "//*[text()='Resume']").click()
 
     time.sleep(5)
 
