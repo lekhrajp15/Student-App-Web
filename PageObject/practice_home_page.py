@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 
 
 
-class PracticeHomePage():
+class PracticeHomePage:
 
     def __init__(self, driver):
         self.driver = driver
@@ -22,7 +22,7 @@ class PracticeHomePage():
     book_toc = (By.CSS_SELECTOR, "[class='toc-content']>div")
     learn_chapter = (By.XPATH, "//*[contains(text(), 'Chapters From')]/parent::div/div[2]/div/div/div[1]/div/div/div")
     book_chapter_practice = (By.XPATH, "//ol[@class='toc-content']/li[@class='rowPracticeList practiceTile']/img[@alt='practice']")
-    learn_chapter_practice_tile = (By.XPATH, "//body[1]/div[2]/main[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]")
+    learn_chapter_practice_tile = (By.XPATH, "//div[@class='section-header']/parent::div/div[2]/div[1]/div[5]")
     practice_on_this_chapter = (By.XPATH, "//span[text()='Practice on this Chapter']")
 
     # def test_practicemodule(self):
@@ -69,6 +69,7 @@ class PracticeHomePage():
         self.driver.find_element(*PracticeHomePage.practice_on_this_chapter).click()
         time.sleep(5)
         self.driver.find_element(*PracticeHomePage.learn_chapter_practice_tile).click()
+        time.sleep(4)
         self.practice_taking()
 
 

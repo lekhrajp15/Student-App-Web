@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from PageObject.test_home_page import TestHomePage
 
 
-class LearnHomePage():
+class LearnHomePage:
 
     def __init__(self, driver):
         self.driver=driver

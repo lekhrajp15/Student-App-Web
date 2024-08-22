@@ -10,7 +10,7 @@ from PageObject.practice_home_page import PracticeHomePage
 from PageObject.test_home_page import TestHomePage
 
 
-class SearchPage():
+class SearchPage:
 
     def __init__(self,driver):
         self.driver=driver

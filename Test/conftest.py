@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 
+from Utilities.utility import utility
 
 driver = None
 
@@ -33,7 +34,8 @@ def setup(request, browser):
     else:
         raise ValueError(f"Browser {browser} is not supported.")
 
-    driver.get("https://www.embibe.com")
+    url =  utility.readConfig('Prod', 'url')
+    driver.get(url)
     driver.maximize_window()
     driver.implicitly_wait(20)
     request.cls.driver = driver

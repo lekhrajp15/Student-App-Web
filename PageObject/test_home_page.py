@@ -177,98 +177,7 @@ class TestHomePage:
             self.test_taking()
 
 
-    def test_taking(self):
-        try:
-            btn = self.driver.find_element(*TestHomePage.test_btn_status).text
 
-            if btn == 'Start Test':
-                self.driver.find_element(*TestHomePage.start_test).click()
-                try:
-                    popup_element = self.driver.find_element(*TestHomePage.test_env_popup)
-                    if popup_element.is_displayed():
-                        self.driver.find_element(*TestHomePage.sel_embibe_expUI).click()
-                        self.driver.find_element(*TestHomePage.instruct_chkbox).click()
-                        self.driver.find_element(*TestHomePage.start_now).click()
-                except NoSuchElementException:
-                    self.driver.find_element(*TestHomePage.instruct_chkbox).click()
-                    self.driver.find_element(*TestHomePage.start_now).click()
-
-            elif btn == 'Resume Test':
-                self.driver.find_element(*TestHomePage.resume_test).click()
-
-            time.sleep(5)
-            ele = self.driver.find_elements(By.XPATH, "//div[@class='test-wrapper ']/div/div[2]/div[1]/button")
-            for k in range(1,len(ele)+1):
-                self.driver.find_element(By.XPATH, "//div[@class='test-wrapper ']/div/div[2]/div[1]/button["+str(k)+"]").click()
-                questions = self.driver.find_elements(*TestHomePage.question_count)
-                for i in range(1, len(questions)):
-                    time.sleep(3)
-                    question = self.driver.find_element(*TestHomePage.question_type).text
-
-                    if question in ['Single Choice', 'Multiple Choice', 'True-False']:
-                        try:
-
-                            self.driver.find_element(*TestHomePage.option_A_click).click()
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-                        except NoSuchElementException:
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-
-                    elif question == 'Subjective Answer':
-                        try:
-
-                            self.driver.find_element(*TestHomePage.sub_input_field).click()
-                            self.driver.find_element(*TestHomePage.sub_input_field).send_keys("XYZ")
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-                        except NoSuchElementException:
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-
-                    elif question == 'Subjective Numerical':
-                        try:
-
-                            self.driver.find_element(*TestHomePage.sub_input_field).click()
-                            self.driver.find_element(*TestHomePage.sub_input_field).send_keys("123")
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-                        except NoSuchElementException:
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-
-                    elif question == 'Fill in The Blanks':
-                        try:
-
-                            self.driver.find_element(*TestHomePage.fib_1_field).click()
-                            self.driver.find_element(*TestHomePage.fib_1_field).send_keys("XYZ")
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-                        except NoSuchElementException:
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-
-                    elif question == 'Matrix':
-                        try:
-
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-                        except NoSuchElementException:
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-
-                    elif question == 'Multiple Fill in The Blanks':
-                        try:
-
-                            self.driver.find_element(*TestHomePage.fib_1_field).click()
-                            self.driver.find_element(*TestHomePage.fib_2_field).click()
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-                        except NoSuchElementException:
-                            self.driver.find_element(*TestHomePage.save_next_btn).click()
-
-                    else:
-                        self.driver.find_element(*TestHomePage.save_next_btn).click()
-
-            self.driver.find_element(*TestHomePage.submit_btn).click()
-            self.driver.find_element(*TestHomePage.submit_confirm_btn).click()
-            self.driver.find_element(*TestHomePage.view_fb_btn).click()
-            assert "Predicted Improvement" == self.driver.find_element("//*[contains(text(),'Predicted')]").text
-
-        except Exception as e:
-                if btn == 'View Test Feedback':
-                    print("Test already Taken")
-                else:
-                    print(f"An error occurred: {e}")
 
     def test_home_sub_banner(self):
         self.driver.find_element(*TestHomePage.test_module).click()
@@ -373,6 +282,101 @@ class TestHomePage:
                 self.driver.find_element(*TestHomePage.view_fb_btn).click()
         except:
             print("Test already Taken")
+    def test_taking(self):
+        try:
+            btn = self.driver.find_element(*TestHomePage.test_btn_status).text
+
+            if btn == 'Start Test':
+                self.driver.find_element(*TestHomePage.start_test).click()
+                try:
+                    popup_element = self.driver.find_element(*TestHomePage.test_env_popup)
+                    if popup_element.is_displayed():
+                        self.driver.find_element(*TestHomePage.sel_embibe_expUI).click()
+                        self.driver.find_element(*TestHomePage.instruct_chkbox).click()
+                        self.driver.find_element(*TestHomePage.start_now).click()
+                except NoSuchElementException:
+                    self.driver.find_element(*TestHomePage.instruct_chkbox).click()
+                    self.driver.find_element(*TestHomePage.start_now).click()
+
+            elif btn =='Expired':
+                print("Test has been Expired")
+
+            elif btn == 'Resume Test':
+                self.driver.find_element(*TestHomePage.resume_test).click()
+
+            time.sleep(5)
+            ele = self.driver.find_elements(By.XPATH, "//div[@class='test-wrapper ']/div/div[2]/div[1]/button")
+            for k in range(1,len(ele)+1):
+                self.driver.find_element(By.XPATH, "//div[@class='test-wrapper ']/div/div[2]/div[1]/button["+str(k)+"]").click()
+                questions = self.driver.find_elements(*TestHomePage.question_count)
+                for i in range(1, len(questions)):
+                    time.sleep(3)
+                    question = self.driver.find_element(*TestHomePage.question_type).text
+
+                    if question in ['Single Choice', 'Multiple Choice', 'True-False']:
+                        try:
+
+                            self.driver.find_element(*TestHomePage.option_A_click).click()
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+                        except NoSuchElementException:
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+
+                    elif question == 'Subjective Answer':
+                        try:
+
+                            self.driver.find_element(*TestHomePage.sub_input_field).click()
+                            self.driver.find_element(*TestHomePage.sub_input_field).send_keys("XYZ")
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+                        except NoSuchElementException:
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+
+                    elif question == 'Subjective Numerical':
+                        try:
+
+                            self.driver.find_element(*TestHomePage.sub_input_field).click()
+                            self.driver.find_element(*TestHomePage.sub_input_field).send_keys("123")
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+                        except NoSuchElementException:
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+
+                    elif question == 'Fill in The Blanks':
+                        try:
+
+                            self.driver.find_element(*TestHomePage.fib_1_field).click()
+                            self.driver.find_element(*TestHomePage.fib_1_field).send_keys("XYZ")
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+                        except NoSuchElementException:
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+
+                    elif question == 'Matrix':
+                        try:
+
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+                        except NoSuchElementException:
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+
+                    elif question == 'Multiple Fill in The Blanks':
+                        try:
+
+                            self.driver.find_element(*TestHomePage.fib_1_field).click()
+                            self.driver.find_element(*TestHomePage.fib_2_field).click()
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+                        except NoSuchElementException:
+                            self.driver.find_element(*TestHomePage.save_next_btn).click()
+
+                    else:
+                        self.driver.find_element(*TestHomePage.save_next_btn).click()
+
+            self.driver.find_element(*TestHomePage.submit_btn).click()
+            self.driver.find_element(*TestHomePage.submit_confirm_btn).click()
+            self.driver.find_element(*TestHomePage.view_fb_btn).click()
+            assert "Predicted Improvement" == self.driver.find_element("//*[contains(text(),'Predicted')]").text
+
+        except Exception as e:
+                if btn == 'View Test Feedback':
+                    print("Test already Taken")
+                else:
+                    print(f"An error occurred: {e}")
 
 
 

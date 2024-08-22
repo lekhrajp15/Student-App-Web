@@ -21,8 +21,11 @@ class utility:
         logger.setLevel(logging.DEBUG)
         return logger
 
-    def read_config_file(self):
-        pass
+    def readConfig(section, key):
+            config = configparser.ConfigParser()
+            config.read("/Users/lekhraj/PycharmProjects/StudentApp-Web/testdata/testdata.ini")
+            return config.get(section, key)
+
 
 
 
