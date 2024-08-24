@@ -15958,3 +15958,20 @@
 2024-08-22 15:59:10,691 :INFO : test_sign_in_password :Testcase: Sign in with Password
 2024-08-22 15:59:47,838 :INFO : test_sign_in_password :Testcase: Sign in with Password
 2024-08-22 16:01:16,673 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-22 16:15:29,442 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-22 16:15:33,236 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-08-22 16:17:12,857 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-08-22 16:17:13,014 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-22 16:25:10,303 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-22 16:25:11,862 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-08-22 16:25:32,403 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-22 16:25:32,549 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-08-23 21:12:14,336 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-08-23 21:12:14,553 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-24 16:08:25,368 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-24 16:08:28,422 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-08-24 16:14:00,813 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-24 16:14:03,874 :INFO : test_signIn_mobile :Testcase: Sign in with Mobile number
+2024-08-24 16:14:07,309 :INFO : test_signIn_email :Testcase: Sign in with Email ID
+2024-08-24 16:14:10,009 :INFO : test_sign_in_password :Testcase: Sign in with Password
+2024-08-24 16:14:10,009 :INFO : test_sign_in_password :Testcase: Sign in with Password
