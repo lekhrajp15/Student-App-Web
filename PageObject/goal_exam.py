@@ -60,7 +60,7 @@ class GoalExamPage:
             else:
                 print("User language not changed")
             cp = configparser.ConfigParser()
-            cp.read('/Users/lekhraj/PycharmProjects/StudentApp-Web/Test/config.ini')
+            cp.read('/Users/lekhraj/StudentAndroidApp/Student-App-Web/Test/config.ini')
             exam_name = cp.get('Prod', 'exam_name')
             self.driver.find_element(*GoalExamPage.exam_button).click()
             time.sleep(1)

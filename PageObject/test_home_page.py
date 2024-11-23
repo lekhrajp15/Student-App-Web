@@ -26,8 +26,8 @@ class TestHomePage:
     save_next_btn = (By.XPATH, "//span[contains(text(),'Save & Next')]")
     submit_btn = (By.XPATH, "//*[contains(text(),'Submit Test')]")
     test_on_this_chapter = (By.XPATH, "//span[text()='Tests on this Chapter']")
-    submit_confirm_btn = (By.XPATH, "//*[@id='app']/main/div/div/div/div[1]/div/div[4]/div[1]/button[1]")
-    view_fb_btn = (By.XPATH, "//span[contains(text(),'View Test Feedback')]")
+    submit_confirm_btn = (By.XPATH, "//*[text()= 'Continue Test']/parent::span/parent::button/parent::div/button[1]/span")
+    view_fb_btn = (By.XPATH, "//span[contains(text(),'View Test Feedback')]/parent::span/parent::button")
     question_count=(By.XPATH, "//div[@id='app']/main/div/div/div[4]/div[2]/div/div")
     sub_input_field = (By.XPATH, "//*[@id='app']/main/div[1]/div/div[4]/div[1]/div[1]/div/div/div/input")
     fib_1_field = (By.XPATH, "//body/div[@id='app']/main[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/input[1]")
@@ -303,6 +303,8 @@ class TestHomePage:
 
             elif btn == 'Resume Test':
                 self.driver.find_element(*TestHomePage.resume_test).click()
+            elif btn == 'View Test Feedback':
+                    print("Test already Taken")
 
             time.sleep(5)
             ele = self.driver.find_elements(By.XPATH, "//div[@class='test-wrapper ']/div/div[2]/div[1]/button")
@@ -368,15 +370,20 @@ class TestHomePage:
                         self.driver.find_element(*TestHomePage.save_next_btn).click()
 
             self.driver.find_element(*TestHomePage.submit_btn).click()
+            time.sleep(5)
             self.driver.find_element(*TestHomePage.submit_confirm_btn).click()
+            time.sleep(10)
             self.driver.find_element(*TestHomePage.view_fb_btn).click()
+            time.sleep(10)
             assert "Predicted Improvement" == self.driver.find_element("//*[contains(text(),'Predicted')]").text
 
         except Exception as e:
-                if btn == 'View Test Feedback':
-                    print("Test already Taken")
-                else:
-                    print(f"An error occurred: {e}")
+            print(e)
+
+
+
+
+
 
 
 

@@ -35,8 +35,11 @@ class signIn_up:
         self.driver.find_element(*signIn_up.get_started).click()
         self.driver.find_element( *signIn_up.email_field).send_keys(self.mobile_num)
         self.driver.find_element(*signIn_up.enter_using_password).click()
+        time.sleep(2)
         self.driver.find_element(*signIn_up.password_field).send_keys(self.mobile_password)
+        time.sleep(2)
         self.driver.find_element(*signIn_up.proceed_btn).click()
+
         self.driver.find_element(*signIn_up.learn_module).click()
         # try :
         #     embium_icon = self.driver.find_element(*signIn_up.embium_icon)
@@ -50,8 +53,10 @@ class signIn_up:
     def sign_in_with_email(self):
         self.driver.find_element(*signIn_up.get_started).click()
         self.driver.find_element(*signIn_up.email_field).send_keys(self.email_id)
+        time.sleep(2)
         self.driver.find_element(*signIn_up.enter_using_password).click()
         self.driver.find_element(*signIn_up.password_field).send_keys(self.email_password)
+        time.sleep(2)
         self.driver.find_element(*signIn_up.proceed_btn).click()
         self.driver.find_element(*signIn_up.learn_module).click()
         # try :
@@ -70,10 +75,12 @@ class signIn_up:
     def test_sign_in_password(self):
         self.driver.find_element(*signIn_up.get_started).click()
         self.driver.find_element(*signIn_up.email_field).send_keys(self.mobile_num)
+        time.sleep(2)
         self.driver.find_element(*signIn_up.enter_using_password).click()
         self.driver.find_element(*signIn_up.password_field).send_keys(self.mobile_password)
+        time.sleep(2)
         self.driver.find_element(*signIn_up.proceed_btn).click()
-        # time.sleep(5)
+
         self.driver.find_element(*signIn_up.learn_module).click()
         # time.sleep(3)
         # self.driver.find_element(*signIn_up.whatsapp_popup).click()

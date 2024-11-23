@@ -1,5 +1,6 @@
-
+import allure
 import pytest
+from allure_commons.model2 import Attachment
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.edge.options import Options as EdgeOptions
@@ -7,14 +8,21 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 
 from Utilities.utility import utility
 
-driver = None
-
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome", help="Type of browser. Default is chrome.")
+
+@pytest.hookimpl(hookwrapper=True, tryfirst=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    rep = outcome.get_result()
+    setattr(item, "rep_" + rep.when, rep)
+    return rep
+
 
 @pytest.fixture
 def browser(request):
     return request.config.getoption("--browser")
+
 
 @pytest.fixture
 def setup(request, browser):
@@ -34,7 +42,7 @@ def setup(request, browser):
     else:
         raise ValueError(f"Browser {browser} is not supported.")
 
-    url =  utility.readConfig('Prod', 'url')
+    url = utility.readConfig('Prod', 'url')
     driver.get(url)
     driver.maximize_window()
     driver.implicitly_wait(20)
@@ -44,30 +52,17 @@ def setup(request, browser):
     driver.quit()
 
 
-@pytest.mark.hookwrapper
-def pytest_runtest_makereport(item):
-    """
-        Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
-        :param item:
-        """
-    pytest_html = item.config.pluginmanager.getplugin('html')
+
+@pytest.fixture()
+def log_on_failure(request):
+    yield
+    item = request.node
+    if item.rep_call.failed:
+        allure.attach(driver.get_screenshot_as_png(), name="failed_test", attachment_type=Attachment.png)
+
+@pytest.hookimpl(hookwrapper=True, tryfirst=True)
+def pytest_runtest_makereport(item, call):
     outcome = yield
-    report = outcome.get_result()
-    extra = getattr(report, 'extra', [])
-
-    if report.when == 'call' or report.when == "setup":
-        xfail = hasattr(report, 'wasxfail')
-        if (report.skipped and xfail) or (report.failed and not xfail):
-            file_name = report.nodeid.replace("::", "_") + ".png"
-            _capture_screenshot(file_name)
-            if file_name:
-                html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
-                       'onclick="window.open(this.src)" align="right"/></div>' % file_name
-                extra.append(pytest_html.extras.html(html))
-        report.extra = extra
-
-
-def _capture_screenshot(name):
-        driver.get_screenshot_as_file(name)
-
-
+    rep = outcome.get_result()
+    setattr(item, "rep_" + rep.when, rep)
+    return rep

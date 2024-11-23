@@ -21,7 +21,7 @@ class PracticeHomePage:
     learn_chapter_test_tile = (By.XPATH, "//*[@class='learn-summary-wrapper__section-data-wrapper']/div/div[2]/div[2]/div[1]/div[1]")
     book_toc = (By.CSS_SELECTOR, "[class='toc-content']>div")
     learn_chapter = (By.XPATH, "//*[contains(text(), 'Chapters From')]/parent::div/div[2]/div/div/div[1]/div/div/div")
-    book_chapter_practice = (By.XPATH, "//ol[@class='toc-content']/li[@class='rowPracticeList practiceTile']/img[@alt='practice']")
+    book_chapter_practice = (By.XPATH, "//ol[@class=' coobo']/li[1]/img")
     learn_chapter_practice_tile = (By.XPATH, "//div[@class='section-header']/parent::div/div[2]/div[1]/div[5]")
     practice_on_this_chapter = (By.XPATH, "//span[text()='Practice on this Chapter']")
 
@@ -76,13 +76,14 @@ class PracticeHomePage:
 
 
     def practice_taking(self):
-        for i in range(1, 3):
+        for i in range(1, 4):
 
 
             try:
                 question_element = self.driver.find_element(By.XPATH,
                                                        "//div[@class='Title_title__og5qd']/div[2]/span[2]")
                 question = question_element.text
+                print(question)
 
                 if question_element.is_displayed():
                     if question == "Multiple Choice":
@@ -100,28 +101,57 @@ class PracticeHomePage:
                         # self.driver.find_element(By.XPATH,
                         #                     "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
                         time.sleep(5)
-                        self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
-                        time.sleep(10)
-                        self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
+                        try:
 
+                                self.driver.find_element(By.XPATH, "//*[@status='DEFAULT']").click()
+                                time.sleep(2)
+                                self.driver.find_element(By.XPATH, "//*[@status='DEFAULT']").send_keys("abc")
+                                time.sleep(2)
+                                self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
+                                time.sleep(10)
+                                self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
+                                time.sleep(2)
+                                self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
+                        except:
+                            self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
+                            time.sleep(10)
+                            self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
                     elif question == "Subjective Numerical":
                         self.driver.find_element(By.XPATH,
                                             "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
                         time.sleep(5)
-                        self.driver.find_element(By.XPATH, "//*[text()='Solve With Us']").click()
-                        self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
-                        time.sleep(10)
-                        self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
+                        try:
+                            if self.driver.find_element(By.XPATH, "[status='DEFAULT']").is_displayed():
+                                self.driver.find_element(By.XPATH, "[status='DEFAULT']").click()
+                                time.sleep(2)
+                                self.driver.find_element(By.XPATH, "[status='DEFAULT']").send_keys("abc")
+                                time.sleep(2)
+                                self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
+                                time.sleep(10)
+                                self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
+                        except:
+                            self.driver.find_element(By.XPATH, "//*[text()='Solve With Us']").click()
+                            self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
+                            time.sleep(10)
+                            self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
                     elif question == "Subjective Answer":
                         time.sleep(5)
-                        self.driver.find_element(By.XPATH,
-                                            "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
-                        self.driver.find_element(By.XPATH, "//*[text()='Solve With Us']").click()
-                        self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
-                        time.sleep(10)
-                        self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
+                        try:
+                            if self.driver.find_element(By.XPATH, "[status='DEFAULT']").is_displayed():
+                                self.driver.find_element(By.XPATH, "[status='DEFAULT']").click()
+                                time.sleep(2)
+                                self.driver.find_element(By.XPATH, "[status='DEFAULT']").send_keys("abc")
+                                time.sleep(2)
+                                self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
+                                time.sleep(10)
+                                self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
+                        except:
+                            self.driver.find_element(By.XPATH, "//*[text()='Solve With Us']").click()
+                            self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
+                            time.sleep(10)
+                            self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
 
                     elif question == "Fill in The Blanks":
@@ -157,8 +187,6 @@ class PracticeHomePage:
                         self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
                         time.sleep(10)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
-
-
 
                     elif question in ["True-False", "Single Choice", "Assertion"]:
                         time.sleep(5)
