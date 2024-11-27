@@ -1,6 +1,5 @@
 import time
 
-
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -16,14 +15,14 @@ class UserHome(PracticeHomePage, TestHomePage):
 
     user_home = (By.XPATH, "//span[text()='Home']")
     bookmark_video_tile = (
-    By.XPATH, "//div[text()='My Bookmarks']/parent::div/div[2]/div/div[1]/div[1]/div/div/div/div[2]")
+        By.XPATH, "//div[text()='My Bookmarks']/parent::div/div[2]/div/div[1]/div[1]/div/div/div/div[2]")
     bookmark_question_tile = (By.XPATH, "//div[text()='My Bookmarks']/parent::div/div[2]/div/div[1]/div[2]/div/div")
     play_all_btn = (By.XPATH, "//span[text()='Play All']")
     practice_all_btn = (By.XPATH, "//span[text()='Practice All']")
     video_bookmark = (By.XPATH, "//*[@class='summary-banner-wrapper__icon-title']/span")
     practice_bookmark_button = (By.XPATH, "//i[@class='demo-icon demo-icon--filled demo-icon--xs icon-style']")
     video_carousel = (
-    By.XPATH, "//div[text()='Trending Videos for Your Exam']/parent::div/div[2]/div[2]/div/div[4]/div")
+        By.XPATH, "//div[text()='Trending Videos for Your Exam']/parent::div/div[2]/div[2]/div/div[4]/div")
     add_fav_book = (By.XPATH,
                     "//*[@src='https://sss.embibe.com/cdn-cgi/image/q=75,w=25,fit=scale-down,onerror=redirect/https://assets.embibe.com/production/web-assets/assets/images/Home/en/manage_books.png']")
     add_book = (By.XPATH, "//div[@class='favBooks-wrapper']/div[2]/div/div[2]/div/div[3]/div")
@@ -32,20 +31,112 @@ class UserHome(PracticeHomePage, TestHomePage):
     view_test_fb = (By.XPATH, "//*[text()='View Test Feedback']")
     revision_list = (By.ID, "revision-lists")
     rl_important_ques = (By.XPATH, "//*[text()='IMPORTANT QUESTIONS']")
-    rl_important_ques_chap_1 = (By.XPATH, "//*[text()='IMPORTANT QUESTIONS']/parent::div/parent::div/parent::div/parent::div/div[2]/div[1]")
+    rl_important_ques_chap_1 = (
+    By.XPATH, "//*[text()='IMPORTANT QUESTIONS']/parent::div/parent::div/parent::div/parent::div/div[2]/div[1]")
     rl_practice_btn = (By.CSS_SELECTOR, "[class='accordian-button-wrapper']")
     rl_filter_dd = (By.XPATH, "//*[text()='Questions To Revise']")
     rl_topics_to_revise = (By.XPATH, "//*[text()='Topics To Revise']")
     rl_solved_examples = (By.XPATH, "//*[text()='SOLVED EXAMPLES']")
-    rl_solved_examples_chap_1 = (By.XPATH, "//*[text()='SOLVED EXAMPLES']/parent::div/parent::div/parent::div/parent::div/div[2]/div[1]")
-    rl_topics_to_revise_learn_button= (By.XPATH, "//*[text()='SOLVED EXAMPLES']/parent::div/parent::div/parent::div/parent::div/div[2]/div[1]/div/div[1]/div[1]/div[1]/div[1]/div/button")
+    rl_solved_examples_chap_1 = (
+    By.XPATH, "//*[text()='SOLVED EXAMPLES']/parent::div/parent::div/parent::div/parent::div/div[2]/div[1]")
+    rl_topics_to_revise_learn_button = (By.XPATH,
+                                        "//*[text()='SOLVED EXAMPLES']/parent::div/parent::div/parent::div/parent::div/div[2]/div[1]/div/div[1]/div[1]/div[1]/div[1]/div/button")
     rl_sub_dd = (By.XPATH, "//*[text()='All Subjects']")
-    rl_sub_options = (By.XPATH, "//*[@class='eds-dropdown-menu__wrapper revision-list-filter-menu-wrapper']/li[2]/button/div/span")
-    UH_live_class_btn = (By.XPATH, "//div[@class='section subject-section']/div[2]/div/div/div[2]/div/div/div/span[text()='Live Classes']")
-    past_live_class_watch_now_btn = (By.XPATH, "//*[text()='Past Live Classes']/parent::div/div[2]/div[2]/div/div[@data-index='0']/div/div/div/div[5]/button")
+    rl_sub_options = (
+    By.XPATH, "//*[@class='eds-dropdown-menu__wrapper revision-list-filter-menu-wrapper']/li[2]/button/div/span")
+    rl_unit_dd = (By.XPATH, "//*[text()='All Units']")
+    rl_chapters_dd = (By.XPATH, "//*[text()='All Chapters']")
+    UH_live_class_btn = (
+    By.XPATH, "//div[@class='section subject-section']/div[2]/div/div/div[2]/div/div/div/span[text()='Live Classes']")
+    past_live_class_watch_now_btn = (By.XPATH,
+                                     "//*[text()='Past Live Classes']/parent::div/div[2]/div[2]/div/div[@data-index='0']/div/div/div/div[5]/button")
     live_class_watch_recording_btn = (By.XPATH, "//*[text()='Watch Recording']")
     live_class_chat_button = (By.XPATH, "//*[text()='Chat']")
     live_class_performance_button = (By.XPATH, "//*[text()='Performance']")
+
+    def rl_filter_options_for_questions(self):
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.user_home)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.revision_list)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_sub_dd)).click()
+        time.sleep(3)
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_sub_options)).click()
+
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_unit_dd)).click()
+        time.sleep(3)
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_sub_options)).click()
+
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_chapters_dd)).click()
+        time.sleep(3)
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_sub_options)).click()
+        time.sleep(10)
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_important_ques)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_important_ques_chap_1)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_practice_btn)
+        ).click()
+        time.sleep(5)
+        assert self.driver.find_element(By.CSS_SELECTOR,
+                                        ".demo-icon.demo-icon--filled.demo-icon--xs.icon-style").is_displayed()
+
+    def rl_filter_options_for_videos(self):
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.user_home)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.revision_list)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_filter_dd)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_topics_to_revise)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_sub_dd)).click()
+        time.sleep(3)
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_sub_options)).click()
+
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_unit_dd)).click()
+        time.sleep(3)
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_sub_options)).click()
+
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_chapters_dd)).click()
+        time.sleep(3)
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(UserHome.rl_sub_options)).click()
+        time.sleep(10)
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_solved_examples)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_solved_examples_chap_1)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_topics_to_revise_learn_button)
+        ).click()
+
+        WebDriverWait(self.driver, 10).until(
+            EC.invisibility_of_element((By.CLASS_NAME, "loader"))  # Adjust if a loader or spinner is expected.
+        )
+
+        self.recommendlearningvideos()
 
     def watch_past_live_class(self):
         WebDriverWait(self.driver, 10).until(
@@ -104,39 +195,39 @@ class UserHome(PracticeHomePage, TestHomePage):
         )
 
     def learn_in_revision_lis(self):
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable(UserHome.user_home)
-            ).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.user_home)
+        ).click()
 
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable(UserHome.revision_list)
-            ).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.revision_list)
+        ).click()
 
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable(UserHome.rl_filter_dd)
-            ).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_filter_dd)
+        ).click()
 
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable(UserHome.rl_topics_to_revise)
-            ).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_topics_to_revise)
+        ).click()
 
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable(UserHome.rl_solved_examples)
-            ).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_solved_examples)
+        ).click()
 
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable(UserHome.rl_solved_examples_chap_1)
-            ).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_solved_examples_chap_1)
+        ).click()
 
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable(UserHome.rl_topics_to_revise_learn_button)
-            ).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(UserHome.rl_topics_to_revise_learn_button)
+        ).click()
 
-            WebDriverWait(self.driver, 10).until(
-                EC.invisibility_of_element((By.CLASS_NAME, "loader"))  # Adjust if a loader or spinner is expected.
-            )
+        WebDriverWait(self.driver, 10).until(
+            EC.invisibility_of_element((By.CLASS_NAME, "loader"))  # Adjust if a loader or spinner is expected.
+        )
 
-            self.recommendlearningvideos()
+        self.recommendlearningvideos()
 
     def add_favourite_book(self):
         # Click on the user home button
@@ -152,21 +243,10 @@ class UserHome(PracticeHomePage, TestHomePage):
 
         # Wait for the 'Add Favourite Book' button to be clickable and click it
         add_fav_button = WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//*[@src='https://sss.embibe.com/cdn-cgi/image/q=75,w=25,fit=scale-down,onerror=redirect/https://assets.embibe.com/production/web-assets/assets/images/Home/en/manage_books.png']"))
+            EC.element_to_be_clickable((By.XPATH,
+                                        "//*[@src='https://sss.embibe.com/cdn-cgi/image/q=75,w=25,fit=scale-down,onerror=redirect/https://assets.embibe.com/production/web-assets/assets/images/Home/en/manage_books.png']"))
         )
         add_fav_button.click()
-
-        # # Wait for the 'Add Book' button to be clickable and click it
-        # add_book_button = WebDriverWait(self.driver, 10).until(
-        #     EC.element_to_be_clickable((By.XPATH, "//*[contains(text(),'Add Book')]"))
-        # )
-        # add_book_button.click()
-        #
-        # # Click on the Done button
-        # done_button = WebDriverWait(self.driver, 10).until(
-        #     EC.element_to_be_clickable((By.XPATH, "//*[contains(text(),'Done')]"))
-        # )
-        # done_button.click()
 
     def video_bookmark_button(self):
         WebDriverWait(self.driver, 10).until(
@@ -293,6 +373,3 @@ class UserHome(PracticeHomePage, TestHomePage):
         self.driver.find_element(By.XPATH, "//*[contains(text(), 'Questionwise Analysis')]").click()
         time.sleep(3)
         self.driver.find_element(By.CSS_SELECTOR, "[alt='arrow']").click()
-
-
-
