@@ -72,17 +72,13 @@ class PracticeHomePage:
         time.sleep(4)
         self.practice_taking()
 
-
-
-
     def practice_taking(self):
         for i in range(1, 4):
-
-
             try:
                 question_element = self.driver.find_element(By.XPATH,
                                                        "//div[@class='Title_title__og5qd']/div[2]/span[2]")
                 question = question_element.text
+                time.sleep(5)
                 print(question)
 
                 if question_element.is_displayed():
@@ -96,26 +92,10 @@ class PracticeHomePage:
                         time.sleep(10)
                         self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
-
                     elif question == "Subjective":
-                        # self.driver.find_element(By.XPATH,
-                        #                     "//div[@class='Title_title__og5qd']/div/div[2]/span/span/i").click()
-                        time.sleep(5)
-                        try:
-
-                                self.driver.find_element(By.XPATH, "//*[@status='DEFAULT']").click()
-                                time.sleep(2)
-                                self.driver.find_element(By.XPATH, "//*[@status='DEFAULT']").send_keys("abc")
-                                time.sleep(2)
-                                self.driver.find_element(By.XPATH, "//*[text()='Check']").click()
-                                time.sleep(10)
-                                self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
-                                time.sleep(2)
-                                self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
-                        except:
-                            self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
-                            time.sleep(10)
-                            self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
+                        self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
+                        time.sleep(10)
+                        self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
 
                     elif question == "Subjective Numerical":
                         self.driver.find_element(By.XPATH,
@@ -152,7 +132,6 @@ class PracticeHomePage:
                             self.driver.find_element(By.XPATH, "//*[text()='Full Solution']").click()
                             time.sleep(10)
                             self.driver.find_element(By.XPATH, "//*[text()='Continue']").click()
-
 
                     elif question == "Fill in The Blanks":
                         time.sleep(5)

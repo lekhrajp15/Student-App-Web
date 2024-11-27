@@ -787,12 +787,11 @@ class LearnHomePage:
 
         self.driver.find_element(*LearnHomePage.learn_button).click()
         try:
-            time.sleep(3)
-            popup = self.driver.find_element(By.XPATH, "//span[text()='Continue from where you left?']/parent::div/parent::div")
+            popup = self.driver.find_element(By.XPATH, "//*[text()='Continue from where you left?']")
             if popup.is_displayed():
                 time.sleep(2)
-                self.driver.find_element(By.XPATH, "//span[text()='Yes']").click()
-                time.sleep(10)
+                self.driver.find_element(By.XPATH, "//*[text()='Yes']").click()
+                time.sleep(5)
                 self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
                 self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
                 time.sleep(5)

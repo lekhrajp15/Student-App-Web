@@ -177,8 +177,6 @@ class TestHomePage:
             self.test_taking()
 
 
-
-
     def test_home_sub_banner(self):
         self.driver.find_element(*TestHomePage.test_module).click()
         total_subject = self.driver.find_elements(*TestHomePage.subject_buttons)
@@ -190,11 +188,11 @@ class TestHomePage:
 
     def recommendlearningvideos(self):
         try:
-            popup = self.driver.find_element(By.CSS_SELECTOR, "[class='sc-llJcti cLATmR sc-jfmDQi LQhpp']")
+            popup = self.driver.find_element(By.XPATH, "//*[text()='Continue from where you left?']")
             if popup.is_displayed():
                 time.sleep(2)
-                self.driver.find_element(By.CSS_SELECTOR, "[class='sc-gicCDI kMRQrC']>button:nth-of-type(1)").click()
-                time.sleep(10)
+                self.driver.find_element(By.XPATH, "//*[text()='Yes']").click()
+                time.sleep(5)
                 # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
                 # self.driver.find_element(*LearnHomePage.learn_button).send_keys(keys.Keys.ESCAPE)
                 self.driver.back()
@@ -202,7 +200,7 @@ class TestHomePage:
                 time.sleep(5)
 
         except NoSuchElementException:
-            time.sleep(10)
+            time.sleep(5)
             self.driver.back()
             self.driver.back()
             time.sleep(5)

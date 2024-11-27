@@ -38,7 +38,6 @@ class GoalExamPage:
             self.driver.find_element(*GoalExamPage.lang_done_btn).click()
             self.driver.find_element(By.XPATH, "//*[@to='/learn/home']").click()
             ele = self.driver.find_element(By.XPATH, "//*[@to='/test/home']").text
-            # self.assertEqual(ele, 'test', f"Expected 'test', but got '{ele}'")
             if ele == 'Test':
                 print("User langugae is English")
             else :
@@ -71,12 +70,6 @@ class GoalExamPage:
             self.driver.find_element(*GoalExamPage.eng_lang_btn).click()
             self.driver.find_element(*GoalExamPage.lang_done_btn).click()
             # self.driver.find_element(By.XPATH, "//*[@to='/learn/home']").click()
-            ele = self.driver.find_element(By.XPATH, "//*[@to='/test/home']").text
-            if ele == 'Test':
-                print("User successfully changed his language to Hindi")
-            else:
-                print("User language not changed")
-
 
         def edit_profile(self):
             ele = self.driver.find_element(*GoalExamPage.profile_icon).click()

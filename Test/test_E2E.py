@@ -5,6 +5,7 @@ from PageObject.practice_home_page import PracticeHomePage
 from PageObject.search_page import SearchPage
 from PageObject.signUp_signIn import signIn_up
 from PageObject.test_home_page import TestHomePage
+from PageObject.user_home import UserHome
 from Utilities.utility import utility
 
 
@@ -329,7 +330,6 @@ class TestEmbibe(utility):
             log.info("Test case: Clicking on the Practice Tile present in the Book TOC")
 
     @pytest.mark.usefixtures("setup")
-    @pytest.mark.practice
     def test_practice_author_books(self):
             log = self.getLogger()
             self.test_sign_in_password()
@@ -402,6 +402,7 @@ class TestEmbibe(utility):
         SP.search_questions_tab()
 
     @pytest.mark.usefixtures("setup")
+
     def test_goal_exam_en(self):
         log = self.getLogger()
         self.test_sign_in_password()
@@ -437,3 +438,59 @@ class TestEmbibe(utility):
         gep = GoalExamPage(self.driver)
         gep.hero_banner_goal_exam_selection_hin()
         log.info("Test case: User is able to select Hindi Language")
+
+    @pytest.mark.usefixtures("setup")
+    @pytest.mark.home
+    def test_practice_in_revision_list(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        UH = UserHome(self.driver)
+        UH.practice_in_revision_list()
+        log.info("Test case: User selects practice present in Revision List")
+
+    @pytest.mark.usefixtures("setup")
+    @pytest.mark.home
+    def test_videos_in_revision_list(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        UH = UserHome(self.driver)
+        UH.learn_in_revision_lis()
+        log.info("Test case: User watch Learn video present in Revision List")
+
+    @pytest.mark.usefixtures("setup")
+    @pytest.mark.home
+    def test_watch_past_live_class(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        UH = UserHome(self.driver)
+        UH.watch_past_live_class()
+        log.info("Test case: User watches Past Live Class")
+
+    @pytest.mark.usefixtures("setup")
+    @pytest.mark.home
+    def test_add_favourite_books(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        UH = UserHome(self.driver)
+        UH.add_favourite_book()
+        log.info("Test case: User add's favourite books")
+
+    @pytest.mark.usefixtures("setup")
+    @pytest.mark.home
+    def test_play_bookmark_videos(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        UH = UserHome(self.driver)
+        UH.play_bookmark_video()
+        log.info("Test case: User watches Bookmarked Videos")
+
+    @pytest.mark.usefixtures("setup")
+    @pytest.mark.home
+    def test_practice_bookmark_questions(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        UH = UserHome(self.driver)
+        UH.practice_bookmark_question()
+        log.info("Test case: User practices Bookmarked Questions")
+
+
