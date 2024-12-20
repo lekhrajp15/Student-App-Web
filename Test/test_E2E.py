@@ -1,6 +1,7 @@
 import pytest
 from PageObject.goal_exam import GoalExamPage
 from PageObject.learn_home_page import LearnHomePage
+from PageObject.monetisation import EmbibeMonetisation
 from PageObject.practice_home_page import PracticeHomePage
 from PageObject.search_page import SearchPage
 from PageObject.signUp_signIn import signIn_up
@@ -416,50 +417,6 @@ class TestEmbibe(utility):
     #     SP = SearchPage(self.driver)
     #     SP.search_questions_tab()
 
-    @pytest.mark.usefixtures("setup", "log_on_failure")
-    @pytest.mark.profile
-    def test_goal_exam_en(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.hero_banner_goal_exam_selection_eng()
-        log.info("Test case : User Updates Goal & Exam")
-
-    @pytest.mark.usefixtures("setup", "log_on_failure")
-    @pytest.mark.profile
-    def test_update_profile(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.edit_profile()
-        log.info("Test case : User Updates Profile Name")
-
-    @pytest.mark.usefixtures("setup", "log_on_failure")
-    @pytest.mark.profile
-    def test_update_avatar(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.edit_avatar()
-        log.info("Test case : User Updates Profile avatar")
-
-    @pytest.mark.usefixtures("setup", "log_on_failure")
-    @pytest.mark.profile
-    def test_profile_edit_goal_exam(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.edit_goal_exam()
-        log.info("Test case: Edit Goal from the Profile Screen")
-
-    @pytest.mark.usefixtures("setup", "log_on_failure")
-    @pytest.mark.profile
-    def test_goal_exam_hi(self):
-        log = self.getLogger()
-        self.test_sign_in_password()
-        gep = GoalExamPage(self.driver)
-        gep.hero_banner_goal_exam_selection_hin()
-        log.info("Test case: User is able to select Hindi Language")
 
     @pytest.mark.usefixtures("setup", "log_on_failure")
     @pytest.mark.home
@@ -532,3 +489,189 @@ class TestEmbibe(utility):
         UH = UserHome(self.driver)
         UH.rl_filter_options_for_videos()
         log.info("Test case : User watches videos using different filter options in the Revision List")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.profile
+    def test_goal_exam_en(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.hero_banner_goal_exam_selection_eng()
+        log.info("Test case : User Updates Goal & Exam")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.profile
+    def test_update_profile(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.edit_profile()
+        log.info("Test case : User Updates Profile Name")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.profile
+    def test_update_avatar(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.edit_avatar()
+        log.info("Test case : User Updates Profile avatar")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.profile
+    def test_profile_edit_goal_exam(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.edit_goal_exam()
+        log.info("Test case: Edit Goal from the Profile Screen")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.profile
+    def test_goal_exam_hi(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        gep = GoalExamPage(self.driver)
+        gep.hero_banner_goal_exam_selection_hin()
+        log.info("Test case: User is able to select Hindi Language")
+
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.monetisation
+    def test_achieve_now(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.achieve_now_plan()
+        log.info("Test case: User is able to select Achieve Now Plan")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.monetisation
+    def test_achieve_sprint(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.achieve_sprint_plan()
+        log.info("Test case: User is able to select Achieve Sprint Plan")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.monetisation
+    def test_achieve_unlimited(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.achieve_unlimited_plan()
+        log.info("Test case: User is able to select Achieve Unlimited Plan")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_lens_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_lens_button()
+        log.info("Test case: User clicks on Lens Card Deeplink button present in the Simple MonetisationPage")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_live_class_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_live_class_button()
+        log.info("Test case: User clicks on Live Class Card Deeplink button present in the Simple MonetisationPage")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_plantale_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_plantale_button()
+        log.info("Test case: User clicks on Plantale Card Deeplink button present in the Simple MonetisationPage")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_brainApse_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_brainapse_button()
+        log.info("Test case: User clicks on BrainApse Card Deeplink button present in the Simple MonetisationPage")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_froggipedia_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_froggipedia_button()
+        log.info("Test case: User clicks on Froggipedia Card Deeplink button present in the Simple Monetisation Page")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_learn_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_learn_button()
+        log.info("Test case: User clicks on Learn Card Deeplink button present in the Simple MonetisationPage")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_achieve_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_achieve_button()
+        log.info("Test case: User clicks on Achieve Card Deeplink button present in the Simple Monetisation Page")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_practice_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_practice_button()
+        log.info("Test case: User clicks on Practice Card Deeplink button present in the Simple Monetisation Page")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_test_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_test_button()
+        log.info("Test case: User clicks on Test Card Deeplink button present in the Simple Monetisation Page")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_revision_list_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_revision_list_button()
+        log.info("Test case: User clicks on Revision List Card Deeplink button present in the Simple Monetisation Page")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_parent_app_card_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_parent_app_button()
+        log.info("Test case: User clicks on Parent App Card Deeplink button present in the Simple Monetisation Page")
+
+    @pytest.mark.usefixtures("setup", "log_on_failure")
+    @pytest.mark.deeplink
+    def test_click_doubt_resolution_deeplink(self):
+        log = self.getLogger()
+        self.test_sign_in_password()
+        monet = EmbibeMonetisation(self.driver)
+        monet.click_doubt_resolution()
+        log.info("Test case: User clicks on Doubt Resolution Card Deeplink button present in the Simple Monetisation Page")
+
+
+
+
+

@@ -1,0 +1,5 @@
+[32mINFO    [0m test_sign_in_password:test_E2E.py:19 Testcase: Sign in with Password
+[32mINFO    [0m test_trending_test_embibe_exp_ui:test_E2E.py:241 Test case: Click on Trending Test
+[32mINFO    [0m test_trending_test_embibe_exp_ui:test_E2E.py:242 Test case: Start Test Button is displayed in the Test Summary
+[32mINFO    [0m test_trending_test_embibe_exp_ui:test_E2E.py:243 Test case: User is navigated to Test Taking Screen on clicking on Start Test button
+[32mINFO    [0m test_trending_test_embibe_exp_ui:test_E2E.py:244 Test case: User submits the test after attempting all questions in the Test taking screen
